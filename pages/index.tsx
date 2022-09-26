@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import type { NextPage } from "next";
-import { useRouter } from "next/router";
+import Link from "next/link";
 import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
@@ -18,7 +18,6 @@ const greetings = [
 
 const Home: NextPage = () => {
   const [greeting, setGreeting] = useState("");
-  const router = useRouter();
 
   useEffect(
     () => setGreeting(greetings[Math.floor(Math.random() * greetings.length)]),
@@ -37,13 +36,19 @@ const Home: NextPage = () => {
         <div className="navbar-logo">Logo</div>
         <ul className="navbar-links">
           <li>
-            <a className="nav-link">about</a>
+            <Link href="/about">
+              <a className="nav-link">about</a>
+            </Link>
           </li>
           <li>
-            <a className="nav-link">experience</a>
+            <Link href="/experience">
+              <a className="nav-link">experience</a>
+            </Link>
           </li>
           <li>
-            <a className="nav-link">contact</a>
+            <Link href="/contact">
+              <a className="nav-link">contact</a>
+            </Link>
           </li>
         </ul>
       </nav>
@@ -53,6 +58,13 @@ const Home: NextPage = () => {
           {" "}
           {greeting}, {"I'm"} Adrian
         </h1>
+
+        <h2 className={styles.subheading}>
+          {"I'm "} Cool
+          {/* <span className="tw"></span> */}
+        </h2>
+
+        <Image src="/Adrian.jpg" alt="Error" width={400} height={300} />
 
         {/* <p className={styles.description}>
           Get started by editing{" "}
@@ -89,7 +101,6 @@ const Home: NextPage = () => {
           </a>
         </div> */}
       </div>
-      {/*}
       <footer className={styles.footer}>
         <a
           href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
@@ -101,7 +112,7 @@ const Home: NextPage = () => {
             <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
           </span>
         </a>
-      </footer> */}
+      </footer>
     </div>
   );
 };
