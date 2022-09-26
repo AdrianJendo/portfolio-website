@@ -1,9 +1,30 @@
-import type { NextPage } from "next"
-import Head from "next/head"
-import Image from "next/image"
-import styles from "../styles/Home.module.css"
+import React, { useEffect, useState } from "react";
+import type { NextPage } from "next";
+import { useRouter } from "next/router";
+import Head from "next/head";
+import Image from "next/image";
+import styles from "../styles/Home.module.css";
+
+const greetings = [
+  "Hello",
+  "Hey",
+  "Hi",
+  "Bonjour",
+  "Salut",
+  "Część",
+  "Witam",
+  "Hola",
+];
 
 const Home: NextPage = () => {
+  const [greeting, setGreeting] = useState("");
+  const router = useRouter();
+
+  useEffect(
+    () => setGreeting(greetings[Math.floor(Math.random() * greetings.length)]),
+    []
+  );
+
   return (
     <div className={styles.app}>
       <Head>
@@ -19,7 +40,7 @@ const Home: NextPage = () => {
             <a className="nav-link">about</a>
           </li>
           <li>
-            <a className="nav-link">experiences</a>
+            <a className="nav-link">experience</a>
           </li>
           <li>
             <a className="nav-link">contact</a>
@@ -27,10 +48,13 @@ const Home: NextPage = () => {
         </ul>
       </nav>
 
-      <div className={styles.main}>
-        <h1 className={styles.title}> Bonjour, {"I'm"} Adrian</h1>
+      <div className={styles.container}>
+        <h1 className={styles.title}>
+          {" "}
+          {greeting}, {"I'm"} Adrian
+        </h1>
 
-        <p className={styles.description}>
+        {/* <p className={styles.description}>
           Get started by editing{" "}
           <code className={styles.code}>pages/index.tsx</code>
         </p>
@@ -63,9 +87,9 @@ const Home: NextPage = () => {
               Instantly deploy your Next.js site to a public URL with Vercel.
             </p>
           </a>
-        </div>
+        </div> */}
       </div>
-
+      {/*}
       <footer className={styles.footer}>
         <a
           href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
@@ -77,9 +101,9 @@ const Home: NextPage = () => {
             <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
           </span>
         </a>
-      </footer>
+      </footer> */}
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

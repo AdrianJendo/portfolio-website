@@ -2,8 +2,8 @@
   padding: 2rem 15vw;
 }
 
-.main {
-  min-height: 100vh;
+.container {
+  /* min-height: 100vh; */
   /* padding: 4rem 0; */
   /* flex: 1; */
   display: flex;
@@ -40,9 +40,8 @@
 }
 
 .title {
-  margin: 0;
   line-height: 1.15;
-  font-size: 4rem;
+  font-size: 3rem;
 }
 
 .title,
