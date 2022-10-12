@@ -6,11 +6,11 @@ const About: NextPage = () => {
     <div className={styles.aboutContainer}>
       <div className={styles.aboutText}>
         <div className={styles.aboutHeader}>
-          <h2>hello world!</h2>
+          <h2 className={styles.abouth2}>hello world!</h2>
           {/* <img className="cat-paw" src="assets/cat_paw_hi.gif" width="100" /> */}
         </div>
         <div className={styles.aboutBio}>
-          <p>
+          <p className={styles.aboutp}>
             Nice to meet you, I&apos;m Adrian!
             <br />
             <br />
@@ -23,21 +23,34 @@ const About: NextPage = () => {
             <br />I love to learn about Software design and patterns and
             applying them to my own projects. Additionally, I have gained a lot
             of experience throughout internships and school teams. I am
-            currently interning at
-            <a className="carta" href="https://carta.com/">
-              <span>Carta</span>
+            currently interning at{" "}
+            <a
+              style={{ color: "rgb(229, 238, 242)", fontWeight: 700 }}
+              href="https://carta.com/"
+            >
+              Carta
             </a>
-            . I have previously interned at
-            <a className="td" href="https://www.td.com/ca/en/asset-management/">
-              <span>TD Asset Management</span>
+            . I have previously interned at{" "}
+            <a
+              style={{ color: "rgb(81, 178, 63)", fontWeight: 700 }}
+              className="td"
+              href="https://www.td.com/ca/en/asset-management/"
+            >
+              TD Asset Management
             </a>
-            ,
-            <a className="piinpoint" href="https://www.piinpoint.com/">
-              <span>PiinPoint</span>
+            ,{" "}
+            <a
+              style={{ color: "rgb(171, 35, 31)", fontWeight: 700 }}
+              href="https://www.piinpoint.com/"
+            >
+              PiinPoint
             </a>
-            , and
-            <a className="cytel" href="https://www.cytel.com/">
-              <span>Cytel</span>
+            , and{" "}
+            <a
+              style={{ color: "rgb(34, 34, 147)", fontWeight: 700 }}
+              href="https://www.cytel.com/"
+            >
+              Cytel
             </a>
             . <br />
             <br />
