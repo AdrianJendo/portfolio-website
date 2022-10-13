@@ -3,6 +3,14 @@ import type { NextPage } from "next";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
 
+//TODO:
+// Left side: Home -> Linkedin, github, etc.
+// Right side: Home, experience, projects, contact
+// contact (mailto)
+// experience page
+// projects page
+// remove footer
+
 const greetings = [
   "Hello",
   "Hey",
