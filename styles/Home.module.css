@@ -12,18 +12,10 @@
   align-items: center;
 }
 
-.footer {
-  display: flex;
-  flex: 1;
-  padding: 2rem 0;
-  border-top: 1px solid #eaeaea;
-  justify-content: center;
-  align-items: center;
-}
-
 .title a {
   color: #0070f3;
   text-decoration: none;
+  text-align: center;
 }
 
 .title a:hover,
@@ -108,10 +100,6 @@
 }
 
 @media (prefers-color-scheme: dark) {
-  .card,
-  .footer {
-    border-color: #222;
-  }
   .code {
     background: #111;
   }
@@ -126,6 +114,7 @@
   overflow: hidden;
   font-weight: 400;
   font-size: 30px;
+  text-align: center;
 }
 
 .image_off,
@@ -154,8 +143,14 @@
 }
 
 .footerContainer {
-  display: inline-block;
   margin-top: 5rem;
+
+  display: flex;
+  flex: 1;
+  padding: 2rem 0;
+  border-top: 1px solid #eaeaea;
+  justify-content: center;
+  align-items: center;
 }
 
 .footerImg {
@@ -175,4 +170,63 @@
   .pFooter {
     font-size: 11px;
   }
+}
+
+.aboutText {
+  align-items: center;
+  margin-top: 2rem;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.aboutContainer {
+  display: flex;
+  align-items: center;
+}
+
+.abouta {
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.profile {
+  width: 30vw;
+}
+
+@media screen and (max-width: 800px) {
+  .aboutContainer {
+    flex-direction: column;
+  }
+
+  .abouth2 {
+    font-size: 25px;
+    line-height: 25px;
+  }
+
+  .aboutp,
+  .aboutli {
+    font-size: 11px;
+    line-height: 15px;
+  }
+
+  .aboutBio {
+    padding-right: 0;
+  }
+
+  .profile {
+    width: 40vw;
+    margin-top: 1rem;
+  }
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.navLink {
+  text-decoration: underline;
+  font-size: 1px;
 }

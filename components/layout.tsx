@@ -19,11 +19,11 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
           <a className="nav-link">Home</a>
         </Link>
         <ul className="navbar-links">
-          <li>
+          {/* <li>
             <Link href="/about">
               <a className="nav-link">about</a>
             </Link>
-          </li>
+          </li> */}
           <li>
             <Link href="/experience">
               <a className="nav-link">experience</a>
@@ -39,30 +39,23 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
 
       <div className={styles.container}>{children}</div>
 
-      <footer className={styles.footer}>
-        <div className={styles.footerContainer}>
-          <a
-            href="https://www.linkedin.com/in/adrian-jendo/"
-            className={styles.footerImg}
-          >
-            <Image alt="Linkedin" width={30} height={30} src="/linkedin.svg" />
-          </a>
-          <a href="https://github.com/adrianjendo" className={styles.footerImg}>
-            <Image alt="Github" width={30} height={30} src="/github.svg" />
-          </a>
-          <a
-            href="https://www.instagram.com/adrian.jendo/"
-            className={styles.footerImg}
-          >
-            <Image
-              alt="Instagram"
-              width={30}
-              height={30}
-              src="/instagram.svg"
-            />
-          </a>
-        </div>
-      </footer>
+      <div className={styles.footerContainer}>
+        <a
+          href="https://www.linkedin.com/in/adrian-jendo/"
+          className={styles.footerImg}
+        >
+          <Image alt="Linkedin" width={30} height={30} src="/linkedin.svg" />
+        </a>
+        <a href="https://github.com/adrianjendo" className={styles.footerImg}>
+          <Image alt="Github" width={30} height={30} src="/github.svg" />
+        </a>
+        <a
+          href="https://www.instagram.com/adrian.jendo/"
+          className={styles.footerImg}
+        >
+          <Image alt="Instagram" width={30} height={30} src="/instagram.svg" />
+        </a>
+      </div>
     </div>
   );
 };

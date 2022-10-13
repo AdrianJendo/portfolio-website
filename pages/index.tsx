@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from "react";
 import type { NextPage } from "next";
-import Link from "next/link";
-import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
 
@@ -36,42 +34,74 @@ const Home: NextPage = () => {
         {/* <span className="tw"></span> */}
       </h2>
 
-      <Image src="/Adrian.jpg" alt="Error" width={400} height={300} />
+      <div style={{ alignContent: "center" }}>
+        <Image
+          className="center"
+          src="/Adrian.jpg"
+          alt="Error"
+          width={400}
+          height={300}
+        />
+      </div>
 
-      {/* <p className={styles.description}>
-          Get started by editing{" "}
-          <code className={styles.code}>pages/index.tsx</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h2>Documentation &rarr;</h2>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h2>Learn &rarr;</h2>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/canary/examples"
-            className={styles.card}
-          >
-            <h2>Examples &rarr;</h2>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h2>Deploy &rarr;</h2>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div> */}
+      <p className={styles.aboutText}>
+        Nice to meet you, I&apos;m Adrian!
+        <br />
+        <br />
+        I&apos;m and undergrad student at the University of Waterloo, studing
+        Mechatronics Engineering (+ specialization in Software Engineering). I
+        have experience working in both frontend & backend development. Some of
+        areas that I am super passionate about include Software Engineering,
+        DevOps, Financial Technology, and Blockchain.
+        <br />
+        <br />I love to learn about Software design and patterns and applying
+        them to my own projects. Additionally, I have gained a lot of experience
+        throughout internships and school teams. I am currently interning at{" "}
+        <a
+          className="abouta"
+          style={{ color: "rgb(229, 238, 242)", fontWeight: 700 }}
+          href="https://carta.com/"
+        >
+          Carta
+        </a>
+        . I have previously interned at{" "}
+        <a
+          className="abouta"
+          style={{ color: "rgb(81, 178, 63)", fontWeight: 700 }}
+          href="https://www.td.com/ca/en/asset-management/"
+        >
+          TD Asset Management
+        </a>
+        ,{" "}
+        <a
+          className="abouta"
+          style={{ color: "rgb(171, 35, 31)", fontWeight: 700 }}
+          href="https://www.piinpoint.com/"
+        >
+          PiinPoint
+        </a>
+        , and{" "}
+        <a
+          className="abouta"
+          style={{ color: "rgb(34, 34, 147)", fontWeight: 700 }}
+          href="https://www.cytel.com/"
+        >
+          Cytel
+        </a>
+        . <br />
+        <br />
+        I&apos;m also a huge fitness enthusiast who loves cooking, working out,
+        skiing, and playing soccer and volleyball. When I&apos;m not locked in
+        my room coding or studying for exams, I enjoy playing sports, cooking,
+        watching movies, and listening to music.
+        <br />
+        <br />
+        I&apos;m also currently exploring Summer 2023 internship opportunities.{" "}
+        <a href="mailto:ajendo@uwaterloo.ca">
+          <span>Get in touch</span>
+        </a>
+        .
+      </p>
     </div>
   );
 };
