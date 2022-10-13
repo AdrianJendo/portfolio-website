@@ -24,7 +24,7 @@ const Experience: NextPage = () => {
                 <h3 className={styles.exph3}>Cool places I&apos;ve worked at</h3>
                   <div style={{marginTop:"35px"}}>
                     {experiences.map(experience => 
-                      <div style={{marginTop: "25px"}}>
+                      <div key={experience.company} style={{marginTop: "25px"}}>
                           {/* <Image
                             className={styles.expImage}
                             src="/carta.png"
@@ -41,7 +41,7 @@ const Experience: NextPage = () => {
                           <ul className={styles.expul}>
                               {experience.description.map(point =>
 
-                              <li className={styles.expli}>
+                              <li key={point}  className={styles.expli}>
                                   <p className={styles.expp}>{point}</p>
                               </li>
                             )
