@@ -21,7 +21,7 @@ const Experience: NextPage = () => {
     <div className={styles.experienceContent}>
         <div className={styles.experiencesContainer}>
             <div className={styles.work}>
-                <h3 className={styles.exph3}>Cool places I've worked at</h3>
+                <h3 className={styles.exph3}>Cool places I&apos;ve worked at</h3>
                   <div style={{marginTop:"35px"}}>
                     {experiences.map(experience => 
                       <div style={{marginTop: "25px"}}>
