@@ -73,7 +73,7 @@ a:focus::after {
   }
   body {
     color: white;
-    background: black;
+    background: rgb(33, 30, 63);
   }
 }
 
@@ -110,4 +110,10 @@ nav {
 
 .navbar-links {
   display: flex;
+}
+
+.navbar-logos {
+  display: inline-block;
+  margin-right: auto; 
+  margin-left: 0;
 }

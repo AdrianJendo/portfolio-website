@@ -4,12 +4,18 @@ import Image from "next/image";
 import styles from "../styles/Home.module.css";
 
 //TODO:
-// Left side: Home -> Linkedin, github, etc.
-// Right side: Home, experience, projects, contact
-// contact (mailto)
-// experience page
+// Fri
 // projects page
-// remove footer
+// ctrl-f for good font
+
+// Sat
+// style that shit
+// deploy that shit
+
+// TODO:
+// typewriter library
+// Organization
+// Experiences (with LOGOS) & Projects make prettier
 
 const greetings = [
   "Hello",
@@ -38,13 +44,13 @@ const Home: NextPage = () => {
       </h1>
 
       <h2 className={styles.subheading}>
-        {"I'm "} Cool
+        {/* Type Writer */}
         {/* <span className="tw"></span> */}
       </h2>
 
-      <div style={{ alignContent: "center" }}>
+      <div className={styles.photo}>
         <Image
-          className="center"
+          style={{borderRadius:"50%"}}
           src="/Adrian.jpg"
           alt="Error"
           width={400}
@@ -52,19 +58,18 @@ const Home: NextPage = () => {
         />
       </div>
 
+
       <p className={styles.aboutText}>
         Nice to meet you, I&apos;m Adrian!
         <br />
         <br />
         I&apos;m and undergrad student at the University of Waterloo, studing
         Mechatronics Engineering (+ specialization in Software Engineering). I
-        have experience working in both frontend & backend development. Some of
-        areas that I am super passionate about include Software Engineering,
-        DevOps, Financial Technology, and Blockchain.
+        have extensive work experience in both frontend & backend software developemnt. I am super passionate about building cool software products,
+        optimizing workflows and CI/CD pipelines, and working with Financial Technology and Blockchain.
         <br />
-        <br />I love to learn about Software design and patterns and applying
-        them to my own projects. Additionally, I have gained a lot of experience
-        throughout internships and school teams. I am currently interning at{" "}
+        <br />I love to learn about Software design and patterns and apply
+        them to my own projects. Through past internships and school activities, I have also gained a lot of industry experience as a Software Engineer. I am currently interning at{" "}
         <a
           className="abouta"
           style={{ color: "rgb(229, 238, 242)", fontWeight: 700 }}
@@ -72,7 +77,7 @@ const Home: NextPage = () => {
         >
           Carta
         </a>
-        . I have previously interned at{" "}
+        , and I have previously interned at{" "}
         <a
           className="abouta"
           style={{ color: "rgb(81, 178, 63)", fontWeight: 700 }}
@@ -104,7 +109,7 @@ const Home: NextPage = () => {
         watching movies, and listening to music.
         <br />
         <br />
-        I&apos;m also currently exploring Summer 2023 internship opportunities.{" "}
+        I&apos;m currently exploring Summer 2023 internship opportunities.{" "}
         <a href="mailto:ajendo@uwaterloo.ca">
           <span>Get in touch</span>
         </a>

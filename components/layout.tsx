@@ -15,9 +15,23 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
 
       <nav>
         {/* <div className="navbar-logo">Logo</div> */}
-        <Link href="/">
-          <a className="nav-link">Home</a>
-        </Link>
+        <div className="navbar-logos">
+          <a
+            href="https://www.linkedin.com/in/adrian-jendo/"
+            className={styles.footerImg}
+          >
+            <Image alt="Linkedin" width={30} height={30} src="/linkedin.svg" />
+          </a>
+          <a href="https://github.com/adrianjendo" className={styles.footerImg}>
+            <Image alt="Github" width={30} height={30} src="/github.svg" />
+          </a>
+          <a
+            href="https://www.instagram.com/adrian.jendo/"
+            className={styles.footerImg}
+          >
+            <Image alt="Instagram" width={30} height={30} src="/instagram.svg" />
+          </a>
+        </div>
         <ul className="navbar-links">
           {/* <li>
             <Link href="/about">
@@ -25,12 +39,22 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
             </Link>
           </li> */}
           <li>
+            <Link href="/">
+              <a className="nav-link">home</a>
+            </Link>
+          </li>
+          <li>
             <Link href="/experience">
               <a className="nav-link">experience</a>
             </Link>
           </li>
           <li>
-            <Link href="/contact">
+            <Link href="/projects">
+              <a className="nav-link">projects</a>
+            </Link>
+          </li>
+          <li>
+            <Link href="mailto:ajendo@uwaterloo.ca">
               <a className="nav-link">contact</a>
             </Link>
           </li>
@@ -39,7 +63,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
 
       <div className={styles.container}>{children}</div>
 
-      <div className={styles.footerContainer}>
+      {/* <div className={styles.footerContainer}>
         <a
           href="https://www.linkedin.com/in/adrian-jendo/"
           className={styles.footerImg}
@@ -55,7 +79,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
         >
           <Image alt="Instagram" width={30} height={30} src="/instagram.svg" />
         </a>
-      </div>
+      </div> */}
     </div>
   );
 };

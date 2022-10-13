@@ -1,6 +1,8 @@
 import type { NextPage } from "next"
 import { useEffect, useState } from "react"
 import experiencesData from "../data/experiences"
+import styles from "../styles/Experience.module.css"
+import Image from "next/image"
 
 const Experience: NextPage = () => {
 
@@ -14,33 +16,51 @@ const Experience: NextPage = () => {
     url: string}[]>([]);
 
   useEffect(() => setExperiences(experiencesData), [])
-  return <div className='container'>
+  return <div className={styles.container}>
 
-    <div className='experience-content'>
-        <div className='experiences-container'>
-            <div className='work'>
-                <h3>Cool places I've worked at</h3>
-                  {experiences.map(experience => 
-                  
-                    <div >
+    <div className={styles.experienceContent}>
+        <div className={styles.experiencesContainer}>
+            <div className={styles.work}>
+                <h3 className={styles.exph3}>Cool places I've worked at</h3>
+                  <div style={{marginTop:"35px"}}>
+                    {experiences.map(experience => 
+                      <div style={{marginTop: "25px"}}>
+                          {/* <Image
+                            className={styles.expImage}
+                            src="/carta.png"
+                            alt="Carta"
+                            width={60}
+                            height={30}
+                          /> */}
+                    <div style={{backgroundColor: "rgb(31, 30, 36)", borderRadius:"25px", boxShadow: "4px 4px 8px"}}> {/* style={{ paddingLeft: "5rem"}}*/}
+                        <div style={{display:"flex", justifyContent: "space-between"}}>
+                          <h4 className={styles.exph4}>{experience.jobTitle} @ <a className={styles.expa} href={experience.url}>{experience.company}</a> </h4>
+                          <span className={styles.exph4}>{experience.date} | {experience.location}</span>
+                        </div>
+                          <p className={styles.expp}>{experience.header}</p>
+                          <ul className={styles.expul}>
+                              {experience.description.map(point =>
 
-                        <h4>{experience.jobTitle}<a href={experience.url}>{experience.company}</a></h4>
-                        <ul>
-                            <li >
-                                <p>{experience.description}</p>
-                            </li>
-                        </ul>
-                        <p>
-                            <span>
-                                <p><span style={{fontWeight:700}}>Technologies</span>: {experience.technologies}</p>
-                            </span>
-                            {experience.date} - {experience.location}
-                        </p>
-                    </div>
-                  
-                  
-                  )
-                  }
+                              <li className={styles.expli}>
+                                  <p className={styles.expp}>{point}</p>
+                              </li>
+                            )
+
+                              }
+                          </ul>
+                          <p className={styles.expp} style={{paddingBottom: "10px"}}>
+                              <span>
+                                  <p className={styles.expp}><span style={{fontWeight:700}}>Technologies</span>: {experience.technologies}</p>
+                              </span>
+                          </p>
+                      </div>
+
+                      </div>
+                    
+                    
+                    )
+                    }
+                  </div>
             </div>
         </div>
     </div>
