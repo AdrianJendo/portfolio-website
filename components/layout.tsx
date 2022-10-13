@@ -14,7 +14,10 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
       </Head>
 
       <nav>
-        <div className="navbar-logo">Logo</div>
+        {/* <div className="navbar-logo">Logo</div> */}
+        <Link href="/">
+          <a className="nav-link">Home</a>
+        </Link>
         <ul className="navbar-links">
           <li>
             <Link href="/about">
@@ -37,16 +40,28 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
       <div className={styles.container}>{children}</div>
 
       <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{" "}
-          <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span>
-        </a>
+        <div className={styles.footerContainer}>
+          <a
+            href="https://www.linkedin.com/in/adrian-jendo/"
+            className={styles.footerImg}
+          >
+            <Image alt="Linkedin" width={30} height={30} src="/linkedin.svg" />
+          </a>
+          <a href="https://github.com/adrianjendo" className={styles.footerImg}>
+            <Image alt="Github" width={30} height={30} src="/github.svg" />
+          </a>
+          <a
+            href="https://www.instagram.com/adrian.jendo/"
+            className={styles.footerImg}
+          >
+            <Image
+              alt="Instagram"
+              width={30}
+              height={30}
+              src="/instagram.svg"
+            />
+          </a>
+        </div>
       </footer>
     </div>
   );
