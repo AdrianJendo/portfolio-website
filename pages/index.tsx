@@ -2,15 +2,13 @@ import React, { useEffect, useState } from "react";
 import type { NextPage } from "next";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
+import Typewriter from "typewriter-effect"
 
 // Fri
-// ctrl-f for good font
 // Logo of website
-// Use real projects / experiences
 // mobile
 
 // TODO:
-// typewriter library
 // Organization
 // Experiences (with LOGOS) & Projects make prettier
 // Embed Circle image of all the projects
@@ -29,6 +27,9 @@ const greetings = [
 const Home: NextPage = () => {
   const [greeting, setGreeting] = useState("");
 
+  // const target = document.getElementById("tw");
+  // const writer = new Typewriter(target, )
+
   useEffect(
     () => setGreeting(greetings[Math.floor(Math.random() * greetings.length)]),
     []
@@ -42,8 +43,32 @@ const Home: NextPage = () => {
       </h1>
 
       <h2 className={styles.subheading}>
-        {/* Type Writer */}
-        {/* <span className="tw"></span> */}
+          {"I'm "}
+        <span style={{display:"inline-block", height:"50px"}}>
+          <Typewriter
+            options={{
+              autoStart: true,
+              loop: true,
+              // skipAddStyles:true,
+              // cursorColor: '#C8ABC9',
+              // typeColor: 'white',
+              deleteSpeed: 20,
+              delay: 100,
+              // blinkSpeed: 200,
+              // animateCursor: true,
+              strings: [
+                "a programmer. 💻", 
+                "a mechatronics engineer. 🤖",
+                "a burrito bowl enjoyer. 🥙",
+                "a fitness enthusiast. 🏋️‍♂️",
+                "a morning person. 🌤️", 
+                "a pineapple on pizza lover. 🍍",
+                "a Disney fanatic. 🏰",
+                "an avid emoji user. 🫡🥳👀",
+              ]
+            }}
+            />
+        </span>
       </h2>
 
       <div className={styles.photo}>
@@ -73,7 +98,7 @@ const Home: NextPage = () => {
         currently interning at{" "}
         <a
           className="abouta"
-          style={{ color: "rgb(229, 238, 242)", fontWeight: 700 }}
+          style={{ color: "rgb(210, 238, 242)", fontWeight: 700 }}
           href="https://carta.com/"
           rel="noreferrer"
           target="_blank"
@@ -103,7 +128,7 @@ const Home: NextPage = () => {
         , and{" "}
         <a
           className="abouta"
-          style={{ color: "rgb(34, 34, 147)", fontWeight: 700 }}
+          style={{ color: "rgb(58, 185, 237)", fontWeight: 700 }}
           href="https://www.cytel.com/"
           rel="noreferrer"
           target="_blank"
