@@ -32,7 +32,7 @@ const Experience: NextPage = () => {
                             width={60}
                             height={30}
                           /> */}
-                    <div style={{backgroundColor: "rgb(31, 30, 36)", borderRadius:"25px", boxShadow: "4px 4px 8px"}}> {/* style={{ paddingLeft: "5rem"}}*/}
+                    <div style={{backgroundColor: "rgb(31, 30, 36)", borderRadius:"25px", padding: "5px", boxShadow: "4px 4px 8px"}}> {/* style={{ paddingLeft: "5rem"}}*/}
                         <div style={{display:"flex", justifyContent: "space-between"}}>
                           <h4 className={styles.exph4}>{experience.jobTitle} @ <a className={styles.expa} href={experience.url}>{experience.company}</a> </h4>
                           <span className={styles.exph4}>{experience.date} | {experience.location}</span>
