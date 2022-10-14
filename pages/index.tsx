@@ -8,10 +8,6 @@ import styles from "../styles/Home.module.css";
 // projects page
 // ctrl-f for good font
 
-// Sat
-// style that shit
-// deploy that shit
-
 // TODO:
 // typewriter library
 // Organization
@@ -50,11 +46,11 @@ const Home: NextPage = () => {
 
       <div className={styles.photo}>
         <Image
-          style={{borderRadius:"50%"}}
           src="/Adrian.jpg"
           alt="Error"
-          width={400}
-          height={300}
+          layout='fill'
+          objectFit='cover'
+          style={{borderRadius:"50%"}}
         />
       </div>
 
@@ -63,13 +59,13 @@ const Home: NextPage = () => {
         Nice to meet you, I&apos;m Adrian!
         <br />
         <br />
-        I&apos;m and undergrad student at the University of Waterloo, studing
-        Mechatronics Engineering (+ specialization in Software Engineering). I
-        have extensive work experience in both frontend & backend software developemnt. I am super passionate about building cool software products,
-        optimizing workflows and CI/CD pipelines, and working with Financial Technology and Blockchain.
+        I&apos;m an undergrad student at the University of Waterloo, studying
+        Mechatronics Engineering (with specialization in Software Engineering). I
+        have extensive work experience in both frontend & backend software development. I am passionate about building innovative software products,
+        optimizing workflows and CI/CD pipelines, and working with financial technology and blockchain.
         <br />
-        <br />I love to learn about Software design and patterns and apply
-        them to my own projects. Through past internships and school activities, I have also gained a lot of industry experience as a Software Engineer. I am currently interning at{" "}
+        <br />I love learning about software design and applying what I learn
+        to my own projects. Through past internships and school activities, I have gained a lot of industry experience as a Software Engineer. I am currently interning at{" "}
         <a
           className="abouta"
           style={{ color: "rgb(229, 238, 242)", fontWeight: 700 }}
@@ -77,7 +73,7 @@ const Home: NextPage = () => {
         >
           Carta
         </a>
-        , and I have previously interned at{" "}
+        , and I have previously worked at{" "}
         <a
           className="abouta"
           style={{ color: "rgb(81, 178, 63)", fontWeight: 700 }}
@@ -103,10 +99,10 @@ const Home: NextPage = () => {
         </a>
         . <br />
         <br />
-        I&apos;m also a huge fitness enthusiast who loves cooking, working out,
+        I&apos;m also a huge fitness enthusiast who loves working out,
         skiing, and playing soccer and volleyball. When I&apos;m not locked in
-        my room coding or studying for exams, I enjoy playing sports, cooking,
-        watching movies, and listening to music.
+        my room coding or studying for exams, I also enjoy being outside, cooking,
+        watching movies, doing escape rooms, and listening to music.
         <br />
         <br />
         I&apos;m currently exploring Summer 2023 internship opportunities.{" "}
