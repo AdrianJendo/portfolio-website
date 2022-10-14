@@ -5,13 +5,13 @@ import styles from "../styles/Home.module.css";
 import Typewriter from "typewriter-effect"
 
 // Fri
+
 // Logo of website
-// mobile
 
 // TODO:
 // Organization
-// Experiences (with LOGOS) & Projects make prettier
-// Embed Circle image of all the projects
+// Experiences (with LOGOS) 
+// Projects make prettier (with project previews / images in embedded circles)
 
 const greetings = [
   "Hello",
@@ -20,15 +20,11 @@ const greetings = [
   "Bonjour",
   "Salut",
   "Część",
-  "Witam",
   "Hola",
 ];
 
 const Home: NextPage = () => {
   const [greeting, setGreeting] = useState("");
-
-  // const target = document.getElementById("tw");
-  // const writer = new Typewriter(target, )
 
   useEffect(
     () => setGreeting(greetings[Math.floor(Math.random() * greetings.length)]),

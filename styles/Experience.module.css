@@ -103,7 +103,25 @@
   }
   .expa {
     text-decoration: underline;
-    color: #221e41;
+    /* color: #221e41; */
+  }
+
+  .expa::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0.2em;
+    background-color: none;
+    opacity: 0;
+    transition: none !important;
+  }
+  
+  .expa:hover::after,
+  .expa:focus::after {
+    opacity: 0;
+    transform: translate3d(0, 0, 0);
   }
 }
 
@@ -120,16 +138,16 @@
     line-height: 25px;
   }
 
-  .exph4 {
+  /* .exph4 {
     font-size: 15px;
     line-height: 25px;
-  }
+  } */
 
   .expp,
   .expli {
     font-size: 11px;
     line-height: 15px;
-    display: list-item;
+    /* display: list-item; */
   }
   .experienceContent {
     padding: 0;
