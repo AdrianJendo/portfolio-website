@@ -45,6 +45,19 @@ const projects = [
     about: [],
   },
   {
+    name: "Stock Portfolio Rebalancer",
+    description:
+      "Python application for automating portfolio rebalancing",
+    technologies: "Python",
+    github: "https://github.com/AdrianJendo/portfolio-balancer",
+    about: [
+      "Utilized the Interactive Brokers API to execute portfolio management",
+      "Imported portfolio data from excel using Python Pandas and balanced portfolio based on imported weights",
+      "Used Yahoo Finance API to collect price data and Python Matplotlib to export graphs of portfolio performance",
+      "Implemented Cron Jobs to automate portfolio rebalancing process and generate periodic performance graphs",
+    ],
+  },
+  {
     name: "Path Finding Visualizer",
     description:
       "Path finding visualizer using Dijkstra’s Algorithm and A* Algorithm",
