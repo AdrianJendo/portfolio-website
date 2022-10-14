@@ -5,6 +5,11 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   background: rgb(33, 30, 63);
+  color: white;
+}
+
+html {
+  color-scheme: dark;
 }
 
 a {
@@ -62,16 +67,6 @@ a:focus::after {
 
 * {
   box-sizing: border-box;
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: rgb(33, 30, 63);
-  }
 }
 
 li {
