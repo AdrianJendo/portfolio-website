@@ -74,17 +74,15 @@ const Experience: NextPage = () => {
                         </li>
                       ))}
                     </ul>
-                    <p
+                    <div
                       className={styles.expp}
                       style={{ paddingBottom: "10px" }}
                     >
-                      <span>
-                        <p className={styles.expp}>
-                          <span style={{ fontWeight: 700 }}>Technologies</span>:{" "}
-                          {experience.technologies}
-                        </p>
-                      </span>
-                    </p>
+                      <p className={styles.expp}>
+                        <span style={{ fontWeight: 700 }}>Technologies</span>:{" "}
+                        {experience.technologies}
+                      </p>
+                    </div>
                   </div>
                 </div>
               ))}

@@ -12,7 +12,7 @@ const Project: NextPage = () => {
       technologies: string;
       about: Array<string>;
       github: string;
-      website: string;
+      website?: string;
     }[]
   >([]);
 
@@ -85,17 +85,15 @@ const Project: NextPage = () => {
                         </li>
                       ))}
                     </ul>
-                    <p
+                    <div
                       className={styles.expp}
                       style={{ paddingBottom: "10px" }}
                     >
-                      <span>
-                        <p className={styles.expp}>
-                          <span style={{ fontWeight: 700 }}>Technologies</span>:{" "}
-                          {project.technologies}
-                        </p>
-                      </span>
-                    </p>
+                      <p className={styles.expp}>
+                        <span style={{ fontWeight: 700 }}>Technologies</span>:{" "}
+                        {project.technologies}
+                      </p>
+                    </div>
                   </div>
                 </div>
               ))}
