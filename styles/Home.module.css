@@ -233,8 +233,9 @@
 
 .photo {
   margin:auto;
+  position: relative;
   width: 400px;
-  height: 300px;
+  height: 400px;
   border-radius: 50%;
-  border: 3px solid black
+  border: 5px solid black
 }
