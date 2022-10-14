@@ -18,18 +18,32 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
         <div className="navbar-logos">
           <a
             href="https://www.linkedin.com/in/adrian-jendo/"
+            rel="noreferrer"
+            target="_blank"
             className={styles.footerImg}
           >
             <Image alt="Linkedin" width={30} height={30} src="/linkedin.svg" />
           </a>
-          <a href="https://github.com/adrianjendo" className={styles.footerImg}>
+          <a
+            href="https://github.com/adrianjendo"
+            rel="noreferrer"
+            target="_blank"
+            className={styles.footerImg}
+          >
             <Image alt="Github" width={30} height={30} src="/github.svg" />
           </a>
           <a
             href="https://www.instagram.com/adrian.jendo/"
+            rel="noreferrer"
+            target="_blank"
             className={styles.footerImg}
           >
-            <Image alt="Instagram" width={30} height={30} src="/instagram.svg" />
+            <Image
+              alt="Instagram"
+              width={30}
+              height={30}
+              src="/instagram.svg"
+            />
           </a>
         </div>
         <ul className="navbar-links">
