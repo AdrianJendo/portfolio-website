@@ -109,7 +109,6 @@
 }
 
 .subheading {
-  margin-top: -10px;
   text-overflow: clip;
   overflow: hidden;
   font-weight: 400;
@@ -196,6 +195,15 @@
 @media screen and (max-width: 800px) {
   .aboutContainer {
     flex-direction: column;
+  }
+
+  .aboutText {
+    align-items: center;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    font-size: 16px;
+    font-weight: 400;
   }
 
   .abouth2 {
