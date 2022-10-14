@@ -2,7 +2,7 @@ import type { NextPage } from "next";
 import { useEffect, useState } from "react";
 import experiencesData from "../data/experiences";
 import styles from "../styles/Experience.module.css";
-import Image from "next/image";
+// import Image from "next/image";
 
 const Experience: NextPage = () => {
   const [experiences, setExperiences] = useState<

@@ -3,15 +3,17 @@ import type { NextPage } from "next";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
 
-//TODO:
 // Fri
-// projects page
 // ctrl-f for good font
+// Logo of website
+// Use real projects / experiences
+// mobile
 
 // TODO:
 // typewriter library
 // Organization
 // Experiences (with LOGOS) & Projects make prettier
+// Embed Circle image of all the projects
 
 const greetings = [
   "Hello",
