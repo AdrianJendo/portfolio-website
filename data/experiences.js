@@ -6,7 +6,7 @@ const experiences = [
       "Developing APIs and backend services with Python and Django to improve Carta’s 409A Valuations platform",
     description: [
       "Identified faulty test cases using Jenkins and applied root cause analysis to correct errors in Python test suite",
-      "Updated exception logic to reduce noise logged to Datadog by 76%, resulting in easy identification of application critical errors",
+      "Improved exception logic to reduce noise logged to Datadog by 76%, resulting in easier identification of application critical errors",
     ],
     technologies:
       "Python, Django, REST, GraphQL, gRPC, Jenkins, Kubernetes, Datadog",
@@ -21,7 +21,7 @@ const experiences = [
       "Improving functionality of internal trading & analytics platform used by Portfolio Managers at TD Bank",
     description: [
       "Directed project to synchronize next business day holdings with MS SQL Server and Python, decreasing trading latency by 80%",
-      "Improved trading platform usability by creating a React feature to submit trades for multiple portfolios simultaneously",
+      "Enhanced trading platform usability by creating a React feature to submit trades for multiple portfolios simultaneously",
       "Discovered and resolved error in annualized volatility calculation for portfolio performance report using Python Pandas",
     ],
     technologies: "React.js, Python, MS SQL Server, REST",
