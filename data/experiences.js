@@ -38,7 +38,7 @@ const experiences = [
       "Spearheaded project to upgrade frontend state management framework to Redux, removing unwanted side effects caused by previous library and improving maintainability of frontend codebase",
       "Implemented API priority queue to reduce backend server load by 20% and decrease loading times of vital UI components",
       "Developed mobile traffic volumes feature with React and Python, receiving client praise for enhanced product value",
-      "Developed backend test cases in Python to unit test APIs and enable quick verification of system functionality in CI/CD pipelines",
+      "Wrote backend test cases in Python to unit test APIs and enable quick verification of system functionality in CI/CD pipelines",
     ],
     technologies: "React.js, Python, PostgreSQL, MongoDB, Docker, REST",
     date: "Summer 2021",
