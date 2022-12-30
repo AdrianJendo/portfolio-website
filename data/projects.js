@@ -11,6 +11,7 @@ const projects = [
     ],
     github: "https://github.com/AdrianJendo/AlgoVote",
     website: "https://algo-vote.com",
+    demo: "https://www.youtube.com/embed/XcajWRSSkpM",
   },
   {
     name: "Stockwatch",
@@ -37,17 +38,17 @@ const projects = [
   },
   {
     name: "Graph Traversal Visualizer",
-    description:
-      "Graph traversal visualizer for directed, undirected, weighted, and unweighted graphs",
+    description: "",
     technologies: "React",
     github: "https://github.com/AdrianJendo/Graph-Traversal",
     website: "https://adrianjendo.github.io/Graph-Traversal/",
-    about: [],
+    about: [
+      "Graph traversal visualizer for directed, undirected, weighted, and unweighted graphs",
+    ],
   },
   {
     name: "Stock Portfolio Rebalancer",
-    description:
-      "Python application for automating portfolio rebalancing",
+    description: "Python application for automating portfolio rebalancing",
     technologies: "Python",
     github: "https://github.com/AdrianJendo/portfolio-balancer",
     about: [
@@ -59,29 +60,31 @@ const projects = [
   },
   {
     name: "Path Finding Visualizer",
-    description:
-      "Path finding visualizer using Dijkstra’s Algorithm and A* Algorithm",
+    description: "",
     technologies: "React",
     github: "https://github.com/AdrianJendo/path_finding",
     website: "https://adrianjendo.github.io/path_finding/",
-    about: [],
+    about: [
+      "Path finding visualizer using Dijkstra’s Algorithm and A* Algorithm",
+    ],
   },
   {
     name: "Sorting Algorithm Visualizer",
-    description:
-      "Sorting visualizer for sorting algorithms such as merge sort, quick sort, and heap sort",
+    description: "",
     technologies: "React",
     github: "https://github.com/AdrianJendo/sortingvisualizer",
     website: "https://adrianjendo.github.io/sortingvisualizer/",
-    about: [],
+    about: [
+      "Sorting visualizer for sorting algorithms such as merge sort, quick sort, and heap sort",
+    ],
   },
   {
     name: "Sudoku Solving Algorithm",
-    description: "Sudoku solving algorithm using recursive backtracking",
+    description: "",
     technologies: "React",
     github: "https://github.com/AdrianJendo/Sudoku-Solver",
     website: "https://adrianjendo.github.io/Sudoku-Solver/",
-    about: [],
+    about: ["Sudoku solving algorithm using recursive backtracking"],
   },
 ];
 

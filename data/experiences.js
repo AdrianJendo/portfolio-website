@@ -5,8 +5,10 @@ const experiences = [
     header:
       "Developing APIs and backend services with Python and Django to improve Carta’s 409A Valuations platform",
     description: [
-      "Identified faulty test cases using Jenkins and applied root cause analysis to correct errors in Python test suite",
-      "Improved exception logic to reduce noise logged to Datadog by 76%, resulting in easier identification of application critical errors",
+      "Led implementation of gRPC APIs to decrease latency between backend services by 85% and allow bidirectional data streaming",
+      "Utilized gRPC interceptors to track API usage metrics, enabling per‑team throttling capabilities and increasing observability",
+      "Updated exception logic to reduce noise logged to Sentry by 76%, resulting in easier identification of application critical errors",
+      "Added email‑sending metrics and monitors to Datadog, enabling detection of bug that caused consistent email service downtime",
     ],
     technologies:
       "Python, Django, REST, GraphQL, gRPC, Jenkins, Kubernetes, Datadog",
@@ -20,7 +22,7 @@ const experiences = [
     header:
       "Improving functionality of internal trading & analytics platform used by Portfolio Managers at TD Bank",
     description: [
-      "Directed project to synchronize next business day holdings with MS SQL Server and Python, decreasing trading latency by 80%",
+      "Directed project to synchronize next business day holdings with MS SQL Server and Python, decreasing trading latency by 60%",
       "Enhanced trading platform usability by creating a React feature to submit trades for multiple portfolios simultaneously",
       "Discovered and resolved error in annualized volatility calculation for portfolio performance report using Python Pandas",
     ],
