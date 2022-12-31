@@ -117,7 +117,7 @@
     opacity: 0;
     transition: none !important;
   }
-  
+
   .expa:hover::after,
   .expa:focus::after {
     opacity: 0;
@@ -143,12 +143,6 @@
     line-height: 25px;
   } */
 
-  .expp,
-  .expli {
-    font-size: 11px;
-    line-height: 15px;
-    /* display: list-item; */
-  }
   .experienceContent {
     padding: 0;
   }
@@ -156,10 +150,4 @@
   .sideProjects {
     margin-bottom: 1rem;
   }
-}
-
-.expImage {
-  position: absolute;
-  /* transform: translate(-10px, 0); */
-  /* padding-left: -1rem; */
 }

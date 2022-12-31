@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const experiences = [
   {
     jobTitle: "Software Engineer Intern",
@@ -15,6 +17,15 @@ const experiences = [
     date: "Fall 2022",
     location: "Kitchener, Ontario",
     url: "https://www.carta.com/",
+    logo: (
+      <Image
+        src="/carta.png"
+        alt="Carta"
+        height="50px"
+        width="100px"
+        style={{ borderRadius: "20%" }}
+      />
+    ),
   },
   {
     jobTitle: "Full Stack Developer Intern",
@@ -30,6 +41,15 @@ const experiences = [
     date: "Winter 2022",
     location: "Toronto, Ontario",
     url: "https://www.td.com/ca/en/asset-management/",
+    logo: (
+      <Image
+        src="/td.png"
+        alt="TD"
+        height="75px"
+        width="75px"
+        style={{ borderRadius: "50%" }}
+      />
+    ),
   },
   {
     jobTitle: "Full Stack Developer Intern",
@@ -46,6 +66,15 @@ const experiences = [
     date: "Summer 2021",
     location: "Kitchener, Ontario",
     url: "https://www.piinpoint.com/",
+    logo: (
+      <Image
+        src="/piinpoint.png"
+        alt="PiinPoint"
+        height="75px"
+        width="75px"
+        style={{ borderRadius: "50%" }}
+      />
+    ),
   },
   {
     jobTitle: "Data Science Intern",
@@ -60,6 +89,15 @@ const experiences = [
     date: "Fall 2020",
     location: "Vancouver, British Columbia",
     url: "https://www.cytel.com/",
+    logo: (
+      <Image
+        src="/cytel.png"
+        alt="Cytel"
+        height="50px"
+        width="100px"
+        style={{ borderRadius: "20%" }}
+      />
+    ),
   },
 ];
 
