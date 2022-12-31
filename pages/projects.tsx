@@ -107,7 +107,7 @@ const Project: NextPage = () => {
                         }}
                       >
                         <iframe
-                          width="560"
+                          width="100%"
                           height="315"
                           src={project.demo}
                           title="YouTube video player"
