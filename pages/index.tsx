@@ -2,26 +2,12 @@ import React, { useEffect, useState } from "react";
 import type { NextPage } from "next";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
-import Typewriter from "typewriter-effect"
-
-// Fri
-
-// Logo of website
+import Typewriter from "typewriter-effect";
 
 // TODO:
-// Organization
-// Experiences (with LOGOS) 
-// Projects make prettier (with project previews / images in embedded circles)
+// Organize styling
 
-const greetings = [
-  "Hello",
-  "Hey",
-  "Hi",
-  "Bonjour",
-  "Salut",
-  "Część",
-  "Hola",
-];
+const greetings = ["Hello", "Hey", "Hi", "Bonjour", "Salut", "Część", "Hola"];
 
 const Home: NextPage = () => {
   const [greeting, setGreeting] = useState("");
@@ -39,8 +25,8 @@ const Home: NextPage = () => {
       </h1>
 
       <h2 className={styles.subheading}>
-          {"I'm "}
-        <span style={{display:"inline-block", height:"50px"}}>
+        {"I'm "}
+        <span style={{ display: "inline-block", height: "50px" }}>
           <Typewriter
             options={{
               autoStart: true,
@@ -53,17 +39,17 @@ const Home: NextPage = () => {
               // blinkSpeed: 200,
               // animateCursor: true,
               strings: [
-                "a programmer. 💻", 
+                "a programmer. 💻",
                 "a mechatronics engineer. 🤖",
                 "a burrito bowl enjoyer. 🥙",
                 "a fitness enthusiast. 🏋️‍♂️",
-                "a morning person. 🌤️", 
+                "a morning person. 🌤️",
                 "a pineapple on pizza lover. 🍍",
                 "a Disney fanatic. 🏰",
                 "an avid emoji user. 🫡🥳👀",
-              ]
+              ],
             }}
-            />
+          />
         </span>
       </h2>
 
@@ -90,8 +76,8 @@ const Home: NextPage = () => {
         <br />
         <br />I love learning about software design and applying what I learn to
         my own projects. Through past internships and school activities, I have
-        gained a lot of industry experience as a Software Engineer. I am
-        currently interning at{" "}
+        gained a lot of industry experience as a Software Engineer. I have
+        previously interned at{" "}
         <a
           className="abouta"
           style={{ color: "rgb(210, 238, 242)", fontWeight: 700 }}
@@ -101,7 +87,7 @@ const Home: NextPage = () => {
         >
           Carta
         </a>
-        , and I have previously worked at{" "}
+        ,{" "}
         <a
           className="abouta"
           style={{ color: "rgb(81, 178, 63)", fontWeight: 700 }}

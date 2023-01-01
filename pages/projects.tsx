@@ -13,6 +13,7 @@ const Project: NextPage = () => {
       about: Array<string>;
       github: string;
       website?: string;
+      demo?: string;
     }[]
   >([]);
 
@@ -85,15 +86,33 @@ const Project: NextPage = () => {
                         </li>
                       ))}
                     </ul>
-                    <div
+                    <p
                       className={styles.expp}
                       style={{ paddingBottom: "10px" }}
                     >
-                      <p className={styles.expp}>
-                        <span style={{ fontWeight: 700 }}>Technologies</span>:{" "}
-                        {project.technologies}
-                      </p>
-                    </div>
+                      <span style={{ fontWeight: 700 }}>Technologies</span>:{" "}
+                      {project.technologies}
+                    </p>
+                    {project.demo && (
+                      <div
+                        style={{
+                          margin: "auto",
+                          width: "50%",
+                          marginTop: "10px",
+                          marginBottom: "20px",
+                        }}
+                      >
+                        <iframe
+                          width="100%"
+                          height="315"
+                          src={project.demo}
+                          title="YouTube video player"
+                          frameBorder="0"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                          allowFullScreen
+                        ></iframe>
+                      </div>
+                    )}
                   </div>
                 </div>
               ))}

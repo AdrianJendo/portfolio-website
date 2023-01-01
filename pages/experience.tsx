@@ -1,8 +1,7 @@
 import type { NextPage } from "next";
-import { useEffect, useState } from "react";
+import { ReactElement, useEffect, useState } from "react";
 import experiencesData from "../data/experiences";
 import styles from "../styles/Experience.module.css";
-// import Image from "next/image";
 
 const Experience: NextPage = () => {
   const [experiences, setExperiences] = useState<
@@ -15,6 +14,7 @@ const Experience: NextPage = () => {
       date: string;
       location: string;
       url: string;
+      logo: ReactElement;
     }[]
   >([]);
 
@@ -22,72 +22,69 @@ const Experience: NextPage = () => {
   return (
     <div className={styles.container}>
       <div className={styles.experienceContent}>
-        <div className={styles.experiencesContainer}>
-          <div className={styles.work}>
-            <h3 className={styles.exph3}>Cool places I&apos;ve worked at</h3>
-            <div style={{ marginTop: "35px" }}>
-              {experiences.map((experience) => (
-                <div key={experience.company} style={{ marginTop: "25px" }}>
-                  {/* <Image
-                            className={styles.expImage}
-                            src="/carta.png"
-                            alt="Carta"
-                            width={60}
-                            height={30}
-                          /> */}
-                  <div
-                    style={{
-                      backgroundColor: "rgb(31, 30, 36)",
-                      borderRadius: "25px",
-                      padding: "5px",
-                      boxShadow: "4px 4px 8px",
-                    }}
-                  >
-                    {" "}
-                    {/* style={{ paddingLeft: "5rem"}}*/}
-                    <div
-                      style={{
-                        display: "flex",
-                        justifyContent: "space-between",
-                      }}
-                    >
-                      <h4 className={styles.exph4}>
-                        {experience.jobTitle} @{" "}
-                        <a
-                          className={styles.expa}
-                          href={experience.url}
-                          rel="noreferrer"
-                          target="_blank"
-                        >
-                          {experience.company}
-                        </a>{" "}
-                      </h4>
-                      <span className={styles.exph4}>
-                        {experience.date} | {experience.location}
-                      </span>
-                    </div>
-                    <p className={styles.expp}>{experience.header}</p>
-                    <ul className={styles.expul}>
-                      {experience.description.map((point) => (
-                        <li key={point} className={styles.expli}>
-                          <p className={styles.expp}>{point}</p>
-                        </li>
-                      ))}
-                    </ul>
-                    <div
-                      className={styles.expp}
-                      style={{ paddingBottom: "10px" }}
-                    >
-                      <p className={styles.expp}>
-                        <span style={{ fontWeight: 700 }}>Technologies</span>:{" "}
-                        {experience.technologies}
-                      </p>
-                    </div>
-                  </div>
+        <h3 className={styles.exph3}>Cool places I&apos;ve worked at</h3>
+        <div style={{ marginTop: "35px" }}>
+          {experiences.map((experience) => (
+            <div
+              key={experience.company}
+              className={styles.container}
+              style={{ marginTop: "25px" }}
+            >
+              {window.innerWidth > 768 && (
+                <div style={{ width: "100px", padding: "none" }}>
+                  {experience.logo}
                 </div>
-              ))}
+              )}
+              <div
+                style={{
+                  backgroundColor: "rgb(31, 30, 36)",
+                  borderRadius: "25px",
+                  padding: "5px",
+                  boxShadow: "4px 4px 8px",
+                  marginLeft: "10px",
+                  position: "relative",
+                  width: window.innerWidth > 768 ? "95%" : "100%",
+                }}
+              >
+                {" "}
+                <div
+                  style={{
+                    display: "flex",
+                    justifyContent: "space-between",
+                  }}
+                >
+                  <h4 className={styles.exph4}>
+                    {experience.jobTitle} @{" "}
+                    <a
+                      className={styles.expa}
+                      href={experience.url}
+                      rel="noreferrer"
+                      target="_blank"
+                    >
+                      {experience.company}
+                    </a>{" "}
+                  </h4>
+                  <span className={styles.exph4}>
+                    {experience.date} | {experience.location}
+                  </span>
+                </div>
+                <p className={styles.expp}>{experience.header}</p>
+                <div style={{ maxWidth: "100%", display: "inline-flex" }}>
+                  <ul className={styles.expul}>
+                    {experience.description.map((point) => (
+                      <li key={point} style={{ paddingLeft: 0 }}>
+                        <p className={styles.expp}>{point}</p>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+                <p className={styles.expp} style={{ paddingBottom: "10px" }}>
+                  <span style={{ fontWeight: 700 }}>Technologies</span>:{" "}
+                  {experience.technologies}
+                </p>
+              </div>
             </div>
-          </div>
+          ))}
         </div>
       </div>
     </div>
