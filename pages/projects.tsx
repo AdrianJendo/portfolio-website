@@ -86,17 +86,13 @@ const Project: NextPage = () => {
                         </li>
                       ))}
                     </ul>
-                    <div
+                    <p
                       className={styles.expp}
-                      style={{
-                        paddingBottom: "10px",
-                      }}
+                      style={{ paddingBottom: "10px" }}
                     >
-                      <p className={styles.expp}>
-                        <span style={{ fontWeight: 700 }}>Technologies</span>:{" "}
-                        {project.technologies}
-                      </p>
-                    </div>
+                      <span style={{ fontWeight: 700 }}>Technologies</span>:{" "}
+                      {project.technologies}
+                    </p>
                     {project.demo && (
                       <div
                         style={{
