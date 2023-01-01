@@ -24,6 +24,7 @@ const projects = [
       "Protected frontend routes and API endpoints by implementing user authentication with JSON Web Tokens and cookies",
     ],
     github: "https://github.com/AdrianJendo/stockwatch",
+    demo: "https://www.youtube.com/embed/hsqSVIbqJtM",
   },
   {
     name: "Computer Vision Traffic Sign Detector",
@@ -35,6 +36,7 @@ const projects = [
       "Varied model parameters such as batch size, activation function, and dropout rate to achieve a test set accuracy of 96.6%",
     ],
     github: "https://github.com/AdrianJendo/traffic-sign-detector",
+    demo: "https://www.youtube.com/embed/-5v7f7f2Nt4",
   },
   {
     name: "Graph Traversal Visualizer",
@@ -45,6 +47,7 @@ const projects = [
     about: [
       "Graph traversal visualizer for directed, undirected, weighted, and unweighted graphs",
     ],
+    demo: "https://www.youtube.com/embed/01acRfJYP8I",
   },
   {
     name: "Stock Portfolio Rebalancer",
@@ -67,6 +70,7 @@ const projects = [
     about: [
       "Path finding visualizer using Dijkstra’s Algorithm and A* Algorithm",
     ],
+    demo: "https://www.youtube.com/embed/EMIDdPRaycQ",
   },
   {
     name: "Sorting Algorithm Visualizer",
@@ -77,6 +81,7 @@ const projects = [
     about: [
       "Sorting visualizer for sorting algorithms such as merge sort, quick sort, and heap sort",
     ],
+    demo: "https://www.youtube.com/embed/0Uc5_Btl-Bs",
   },
   {
     name: "Sudoku Solving Algorithm",
@@ -85,6 +90,7 @@ const projects = [
     github: "https://github.com/AdrianJendo/Sudoku-Solver",
     website: "https://adrianjendo.github.io/Sudoku-Solver/",
     about: ["Sudoku solving algorithm using recursive backtracking"],
+    demo: "https://www.youtube.com/embed/mYu07Ch48Mc",
   },
 ];
 
