@@ -6,7 +6,6 @@ import Typewriter from "typewriter-effect";
 
 // TODO:
 // Organize styling
-// Experiences (with LOGOS)
 
 const greetings = ["Hello", "Hey", "Hi", "Bonjour", "Salut", "Część", "Hola"];
 
