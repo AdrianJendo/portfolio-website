@@ -7,7 +7,7 @@ import Typewriter from "typewriter-effect";
 // TODO:
 // Organize styling
 
-const greetings = ["Hello", "Hey", "Hi", "Bonjour", "Salut", "Część", "Hola"];
+const greetings = ["Hello", "Bonjour", "Część"];
 
 const Home: NextPage = () => {
   const [greeting, setGreeting] = useState("");
@@ -41,12 +41,13 @@ const Home: NextPage = () => {
               strings: [
                 "a programmer. 💻",
                 "a mechatronics engineer. 🤖",
-                "a burrito bowl enjoyer. 🥙",
                 "a fitness enthusiast. 🏋️‍♂️",
                 "a morning person. 🌤️",
+                "an avid emoji user. 🫡🥳👀",
                 "a pineapple on pizza lover. 🍍",
                 "a Disney fanatic. 🏰",
-                "an avid emoji user. 🫡🥳👀",
+                "a burrito bowl enjoyer. 🥙",
+                "a certified goof. 🤪",
               ],
             }}
           />
