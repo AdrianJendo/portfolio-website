@@ -1,5 +1,5 @@
 .app {
-  padding: 2rem 15vw;
+  padding: 2rem 14vw;
 }
 
 .container {
@@ -231,10 +231,10 @@
 }
 
 .photo {
-  margin:auto;
+  margin: auto;
   position: relative;
   width: 400px;
   height: 400px;
   border-radius: 50%;
-  border: 5px solid black
+  border: 5px solid black;
 }
