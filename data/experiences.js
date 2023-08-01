@@ -2,18 +2,40 @@ import Image from "next/image";
 
 const experiences = [
   {
-    jobTitle: "Software Engineer Intern",
+    jobTitle: "Software Engineer Intern - Valuations Product",
     company: "Carta 💸",
-    header:
-      "Developing APIs and backend services with Python and Django to improve Carta’s 409A Valuations platform",
     description: [
-      "Led implementation of gRPC APIs to decrease latency between backend services by 85% and allow bidirectional data streaming",
-      "Utilized gRPC interceptors to track API usage metrics, enabling per‑team throttling capabilities and increasing observability",
-      "Updated exception logic to reduce noise logged to Sentry by 76%, resulting in easier identification of application critical errors",
-      "Added email‑sending metrics and monitors to Datadog, enabling detection of bug that caused consistent email service downtime",
+      "Designed and implemented end-to-end solution to enable Amazon S3 file-uploads on web form, increasing conversion by 20%",
+      "Developed Python service to auto-fill form inputs with data exposed through gRPC API, improving form completion time by 50%",
+      "Spearheaded tech-debt sprint by replacing inefficient React components and reducing Sentry noise by 130 daily alerts",
+      "Created Amplitude dashboards for in-depth user behavior analysis, facilitating the identification of critical user drop-off points, resulting in data-driven optimizations and increased user engagement",
     ],
     technologies:
-      "Python, Django, REST, GraphQL, gRPC, Jenkins, Kubernetes, Datadog",
+      "Python, Django, React, Kafka, gRPC, Jenkins, Kubernetes, Sentry, GraphQL",
+    date: "Fall 2022",
+    location: "Kitchener, Ontario",
+    url: "https://www.carta.com/",
+    logo: (
+      <Image
+        src="/carta.png"
+        alt="Carta"
+        height="50px"
+        width="100px"
+        style={{ borderRadius: "20%" }}
+      />
+    ),
+  },
+  {
+    jobTitle: "Software Engineer Intern - Valuations Platform",
+    company: "Carta 💸",
+    description: [
+      "Utilized object oriented principles to develop email tracking metrics with Datadog, enabling company-wide service observability",
+      "Tracked gRPC usage metrics through client-side interceptor, enabling service throttling capabilities and Datadog monitoring",
+      "Updated exception logic to reduce noise logged to Sentry by 76%, resulting in easier identification of application critical errors",
+      "Identified faulty test cases using Jenkins and applied root cause analysis to correct errors in Python test suite",
+    ],
+    technologies:
+      "Python, Django, gRPC, Datadog, Jenkins, Kubernetes, Sentry, GraphQL",
     date: "Fall 2022",
     location: "Kitchener, Ontario",
     url: "https://www.carta.com/",
@@ -54,8 +76,6 @@ const experiences = [
   {
     jobTitle: "Full Stack Developer Intern",
     company: "PiinPoint 📍",
-    header:
-      "Developing full stack features and tools for a global Software Startup focused on geospatial analytics",
     description: [
       "Spearheaded project to upgrade frontend state management framework to Redux, removing unwanted side effects caused by previous library and improving maintainability of frontend codebase",
       "Implemented API priority queue to reduce backend server load by 20% and decrease loading times of vital UI components",
@@ -79,10 +99,8 @@ const experiences = [
   {
     jobTitle: "Data Science Intern",
     company: "Cytel 💉",
-    header:
-      "Creating web applications and scripts with R and Python for analyzing adaptive clinical trials",
     description: [
-      "Developed web applications with R Shiny to enable researchers to systematically conduct Bayesian network meta‑analysis",
+      "Developed web applications with R Shiny to enable researchers to systematically conduct Bayesian network meta-analysis",
       "Web scraped abstracts using Python Selenium to train NLP model for parsing publications based on sentiment analysis",
     ],
     technologies: "Python, R",
