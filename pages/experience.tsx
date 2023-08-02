@@ -8,7 +8,6 @@ const Experience: NextPage = () => {
     {
       jobTitle: string;
       company: string;
-      header: string;
       description: Array<string>;
       technologies: string;
       date: string;
@@ -68,11 +67,10 @@ const Experience: NextPage = () => {
                     {experience.date} | {experience.location}
                   </span>
                 </div>
-                <p className={styles.expp}>{experience.header}</p>
                 <div style={{ maxWidth: "100%", display: "inline-flex" }}>
                   <ul className={styles.expul}>
                     {experience.description.map((point) => (
-                      <li key={point} style={{ paddingLeft: 0 }}>
+                      <li key={point} className={styles.expli}>
                         <p className={styles.expp}>{point}</p>
                       </li>
                     ))}

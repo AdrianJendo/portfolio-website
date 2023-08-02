@@ -78,7 +78,9 @@ const Project: NextPage = () => {
                         </a>
                       </h4>
                     </div>
-                    <p className={styles.expp}>{project.description}</p>
+                    <p className={styles.expdescription}>
+                      {project.description}
+                    </p>
                     <ul className={styles.expul}>
                       {project.about.map((point) => (
                         <li key={point} className={styles.expli}>
@@ -87,7 +89,7 @@ const Project: NextPage = () => {
                       ))}
                     </ul>
                     <p
-                      className={styles.expp}
+                      className={styles.expdescription}
                       style={{ paddingBottom: "10px" }}
                     >
                       <span style={{ fontWeight: 700 }}>Technologies</span>:{" "}
