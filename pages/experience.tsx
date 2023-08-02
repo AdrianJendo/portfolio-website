@@ -70,10 +70,7 @@ const Experience: NextPage = () => {
                 <div style={{ maxWidth: "100%", display: "inline-flex" }}>
                   <ul className={styles.expul}>
                     {experience.description.map((point) => (
-                      <li
-                        key={point}
-                        style={{ paddingLeft: 0, paddingBottom: "10px" }}
-                      >
+                      <li key={point} className={styles.expli}>
                         <p className={styles.expp}>{point}</p>
                       </li>
                     ))}
