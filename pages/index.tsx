@@ -73,7 +73,7 @@ const Home: NextPage = () => {
         I have extensive work experience in both frontend & backend software
         development. I am passionate about building innovative software
         products, optimizing workflows and CI/CD pipelines, and working with
-        financial technology and blockchain.
+        financial technology.
         <br />
         <br />I love learning about software design and applying what I learn to
         my own projects. Through past internships and school activities, I have
@@ -126,7 +126,7 @@ const Home: NextPage = () => {
         watching movies, doing escape rooms, and listening to music.
         <br />
         <br />
-        I&apos;m currently exploring Summer 2023 internship opportunities.{" "}
+        I&apos;m currently exploring 2024 new grad opportunities.{" "}
         <a href="mailto:ajendo@uwaterloo.ca">
           <span>Get in touch</span>
         </a>
