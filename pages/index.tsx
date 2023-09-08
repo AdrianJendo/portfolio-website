@@ -73,7 +73,7 @@ const Home: NextPage = () => {
         I have extensive work experience in both frontend & backend software
         development. I am passionate about building innovative software
         products, optimizing workflows and CI/CD pipelines, and working with
-        financial technology.
+        financial technology and blockchain.
         <br />
         <br />I love learning about software design and applying what I learn to
         my own projects. Through past internships and school activities, I have

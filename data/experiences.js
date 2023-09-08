@@ -5,10 +5,10 @@ const experiences = [
     jobTitle: "Software Engineer Intern - Valuations Product",
     company: "Carta 💸",
     description: [
-      "Designed and implemented end-to-end solution to enable Amazon S3 file-uploads on web form, increasing conversion by 20%",
+      "Designed and implemented an end-to-end solution to enable Amazon S3 file-uploads on web form, increasing conversion by 10%",
       "Developed Python service to auto-fill form inputs with data exposed through gRPC APIs, improving form completion time by 50%",
-      "Spearheaded tech-debt sprint by replacing inefficient React components and reducing Sentry noise by 130 daily alerts",
-      "Created Amplitude dashboards for in-depth user behavior analysis, facilitating the identification of critical user drop-off points, and resulting in data-driven optimizations to increase user engagement",
+      "Led stock expense sensitivity feature to optimize compliance workflow time by 90% and improve audit resolution by several weeks",
+      "Created Amplitude dashboards based on React frontend events for in-depth user behavior analysis, facilitating the identification of critical user drop-off points, resulting in data-driven optimizations and increased user engagement",
     ],
     technologies:
       "Python, Django, React, Kafka, gRPC, Jenkins, Kubernetes, Sentry, GraphQL",
@@ -29,10 +29,9 @@ const experiences = [
     jobTitle: "Software Engineer Intern - Valuations Platform",
     company: "Carta 💸",
     description: [
-      "Utilized object oriented principles to implement email tracking service for Datadog, enabling company-wide email observability",
-      "Created a client-side interceptor to track gRPC caller origin metrics, enabling API throttling capabilities and Datadog monitoring",
-      "Updated exception logic to reduce noise logged to Sentry by 76%, resulting in easier identification of application critical errors",
-      "Identified faulty test cases using Jenkins and applied root cause analysis to correct errors in Python test suite",
+      "Utilized object-oriented principles and Datadog Agent to create email tracking service, improving company-wide email observability",
+      "Developed client-side interceptor to track gRPC caller origin metrics, enabling API throttling capabilities and Datadog monitoring",
+      "Spearheaded tech-debt sprint by replacing inefficient React components and reducing Sentry noise by 130 daily alerts",
     ],
     technologies:
       "Python, Django, gRPC, Datadog, Jenkins, Kubernetes, Sentry, GraphQL",

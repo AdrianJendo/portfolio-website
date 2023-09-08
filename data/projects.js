@@ -5,9 +5,9 @@ const projects = [
       "Successfully led team of 5 students to build a mechatronics device for traversing a wall and locating a target on the other side",
     technologies: "Rust, Jira",
     about: [
-      "Organized timeline, requirements, tasks, and meetings to maximize productivity and difused mission-critical blockers",
       "Implemented path traversal algorithms and PID control system in Rust to ensure efficient and consistent course navigation",
       "Interfaced software with gyroscope and time-of-flight sensor to provide reliable location data and consistent course completion",
+      "Organized timeline, requirements, tasks, and meetings to maximize productivity and difused mission-critical blockers",
     ],
     github: "https://github.com/cameronkinsella/mikoto-bot",
     demo: "https://www.youtube.com/embed/txkZcLdLhW8",
@@ -20,7 +20,7 @@ const projects = [
       "React, Node.js, Docker, Nginx, Google Cloud, Algorand Blockchain",
     about: [
       "Wrote smart contracts on the Algorand blockchain using TEAL to verify and count votes as well as manage voting permissions",
-      "Leveraged React, Node.js, Docker, and Google Cloud to develop a full stack web application, deployed at algo‑vote.com",
+      "Leveraged React, Node.js, Docker, and Google Cloud to develop a full stack web application",
     ],
     github: "https://github.com/AdrianJendo/AlgoVote",
     demo: "https://www.youtube.com/embed/XcajWRSSkpM",
