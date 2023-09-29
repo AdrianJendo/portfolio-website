@@ -7,7 +7,7 @@ import Typewriter from "typewriter-effect";
 // TODO:
 // Organize styling
 
-const greetings = ["Hello", "Bonjour", "Część"];
+const greetings = ["Hello", "Bonjour", "Cześć", "Hola"];
 
 const Home: NextPage = () => {
   const [greeting, setGreeting] = useState("");
