@@ -39,8 +39,8 @@ const Experience: NextPage = () => {
                   backgroundColor: "rgb(31, 30, 36)",
                   borderRadius: "25px",
                   padding: "5px",
-                  boxShadow: "4px 4px 8px",
-                  marginLeft: "10px",
+                  boxShadow: "0px 0px 10px",
+                  marginLeft: "20px",
                   position: "relative",
                   width: window.innerWidth > 768 ? "95%" : "100%",
                 }}

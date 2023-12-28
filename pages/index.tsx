@@ -3,9 +3,15 @@ import type { NextPage } from "next";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import Typewriter from "typewriter-effect";
+import GraphemeSplitter from "grapheme-splitter";
 
 // TODO:
 // Organize styling
+
+const stringSplitter = (s: string) : string[] => {
+  const splitter = new GraphemeSplitter();
+  return splitter.splitGraphemes(s);
+};
 
 const greetings = ["Hello", "Bonjour", "Cześć", "Hola"];
 
@@ -36,6 +42,8 @@ const Home: NextPage = () => {
               // typeColor: 'white',
               deleteSpeed: 20,
               delay: 100,
+              // @ts-ignore
+              stringSplitter,
               // blinkSpeed: 200,
               // animateCursor: true,
               strings: [
