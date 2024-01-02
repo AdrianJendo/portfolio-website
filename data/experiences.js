@@ -15,15 +15,7 @@ const experiences = [
     date: "Summer 2023",
     location: "Kitchener, Ontario",
     url: "https://www.carta.com/",
-    logo: (
-      <Image
-        src="/carta.png"
-        alt="Carta"
-        height="50"
-        width="100"
-        style={{ borderRadius: "20%" }}
-      />
-    ),
+    logo: "/carta.png",
   },
   {
     jobTitle: "Software Engineer Intern - Valuations Platform",
@@ -38,15 +30,7 @@ const experiences = [
     date: "Fall 2022",
     location: "Kitchener, Ontario",
     url: "https://www.carta.com/",
-    logo: (
-      <Image
-        src="/carta.png"
-        alt="Carta"
-        height="50"
-        width="100"
-        style={{ borderRadius: "20%" }}
-      />
-    ),
+    logo: "/carta.png",
   },
   {
     jobTitle: "Full Stack Developer Intern",
@@ -62,15 +46,7 @@ const experiences = [
     date: "Winter 2022",
     location: "Toronto, Ontario",
     url: "https://www.td.com/ca/en/asset-management/",
-    logo: (
-      <Image
-        src="/td.png"
-        alt="TD"
-        height="75"
-        width="75"
-        style={{ borderRadius: "50%" }}
-      />
-    ),
+    logo: "/td.png",
   },
   {
     jobTitle: "Full Stack Developer Intern",
@@ -85,15 +61,7 @@ const experiences = [
     date: "Summer 2021",
     location: "Kitchener, Ontario",
     url: "https://www.piinpoint.com/",
-    logo: (
-      <Image
-        src="/piinpoint.png"
-        alt="PiinPoint"
-        height="75"
-        width="75"
-        style={{ borderRadius: "50%" }}
-      />
-    ),
+    logo: "/piinpoint.png",
   },
   {
     jobTitle: "Data Science Intern",
@@ -106,15 +74,7 @@ const experiences = [
     date: "Fall 2020",
     location: "Vancouver, British Columbia",
     url: "https://www.cytel.com/",
-    logo: (
-      <Image
-        src="/cytel.png"
-        alt="Cytel"
-        height="50"
-        width="100"
-        style={{ borderRadius: "20%" }}
-      />
-    ),
+    logo: "/cytel.png",
   },
 ];
 
