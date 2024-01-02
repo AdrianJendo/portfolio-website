@@ -13,21 +13,12 @@ const stringSplitter = (s: string) : string[] => {
   return splitter.splitGraphemes(s);
 };
 
-const greetings = ["Hello", "Bonjour", "Cześć", "Hola"];
-
 const Home: NextPage = () => {
-  const [greeting, setGreeting] = useState("");
-
-  useEffect(
-    () => setGreeting(greetings[Math.floor(Math.random() * greetings.length)]),
-    []
-  );
-
   return (
     <div>
       <h1 className={styles.title}>
         {" "}
-        {greeting}, {"I'm"} Adrian
+        Hello, {"I'm"} Adrian
       </h1>
 
       <h2 className={styles.subheading}>
@@ -52,10 +43,7 @@ const Home: NextPage = () => {
                 "a fitness enthusiast. 🏋️‍♂️",
                 "a morning person. 🌤️",
                 "an avid emoji user. 🫡🥳👀",
-                "a pineapple on pizza lover. 🍍",
-                "a Disney fanatic. 🏰",
                 "a burrito bowl enjoyer. 🥙",
-                "a certified goof. 🤪",
               ],
             }}
           />
@@ -72,23 +60,20 @@ const Home: NextPage = () => {
         />
       </div>
 
-      <p className={styles.aboutText}>
+<div className={styles.aboutContainer}>
+      <div className={styles.aboutText}>
+        <p className={styles.aboutp}>
         Nice to meet you, I&apos;m Adrian!
-        <br />
-        <br />
+        </p>
+        <p className={styles.aboutp}>
         I&apos;m an undergrad student at the University of Waterloo, studying
-        Mechatronics Engineering (with specialization in Software Engineering).
-        I have extensive work experience in both frontend & backend software
-        development. I am passionate about building innovative software
-        products, optimizing workflows and CI/CD pipelines, and working with
-        financial technology and blockchain.
-        <br />
-        <br />I love learning about software design and applying what I learn to
-        my own projects. Through past internships and school activities, I have
+        Mechatronics Engineering (with a specialization in computing).
+        I am interested in full stack development, information retrieval, cloud computing, distributed systems, and financial technology.
+        Through past internships and school activities, I have
         gained a lot of industry experience as a Software Engineer. I have
         previously interned at{" "}
         <a
-          className="abouta"
+          className={styles.abouta}
           style={{ color: "rgb(210, 238, 242)", fontWeight: 700 }}
           href="https://carta.com/"
           rel="noreferrer"
@@ -98,7 +83,7 @@ const Home: NextPage = () => {
         </a>
         ,{" "}
         <a
-          className="abouta"
+          className={styles.abouta}
           style={{ color: "rgb(81, 178, 63)", fontWeight: 700 }}
           href="https://www.td.com/ca/en/asset-management/"
           rel="noreferrer"
@@ -108,7 +93,7 @@ const Home: NextPage = () => {
         </a>
         ,{" "}
         <a
-          className="abouta"
+          className={styles.abouta}
           style={{ color: "rgb(171, 35, 31)", fontWeight: 700 }}
           href="https://www.piinpoint.com/"
           rel="noreferrer"
@@ -118,28 +103,29 @@ const Home: NextPage = () => {
         </a>
         , and{" "}
         <a
-          className="abouta"
+          className={styles.abouta}
           style={{ color: "rgb(58, 185, 237)", fontWeight: 700 }}
           href="https://www.cytel.com/"
           rel="noreferrer"
           target="_blank"
         >
           Cytel
-        </a>
-        . <br />
-        <br />
+        </a>.
+        </p>
+        <p className={styles.aboutp}>
         I&apos;m also a huge fitness enthusiast who loves working out, skiing,
         and playing soccer and volleyball. When I&apos;m not locked in my room
         coding or studying for exams, I also enjoy being outside, cooking,
         watching movies, doing escape rooms, and listening to music.
-        <br />
-        <br />
+        </p>
+        <p className={styles.aboutp}>
         I&apos;m currently exploring 2024 new grad opportunities.{" "}
-        <a href="mailto:ajendo@uwaterloo.ca">
-          <span>Get in touch</span>
-        </a>
-        .
-      </p>
+        <a className={styles.abouta} href="mailto:ajendo@uwaterloo.ca">
+          Get in touch
+        </a>.
+        </p>
+      </div>
+    </div>
     </div>
   );
 };

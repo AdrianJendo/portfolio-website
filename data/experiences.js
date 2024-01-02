@@ -19,8 +19,8 @@ const experiences = [
       <Image
         src="/carta.png"
         alt="Carta"
-        height="50px"
-        width="100px"
+        height="50"
+        width="100"
         style={{ borderRadius: "20%" }}
       />
     ),
@@ -42,8 +42,8 @@ const experiences = [
       <Image
         src="/carta.png"
         alt="Carta"
-        height="50px"
-        width="100px"
+        height="50"
+        width="100"
         style={{ borderRadius: "20%" }}
       />
     ),
@@ -66,8 +66,8 @@ const experiences = [
       <Image
         src="/td.png"
         alt="TD"
-        height="75px"
-        width="75px"
+        height="75"
+        width="75"
         style={{ borderRadius: "50%" }}
       />
     ),
@@ -89,8 +89,8 @@ const experiences = [
       <Image
         src="/piinpoint.png"
         alt="PiinPoint"
-        height="75px"
-        width="75px"
+        height="75"
+        width="75"
         style={{ borderRadius: "50%" }}
       />
     ),
@@ -110,8 +110,8 @@ const experiences = [
       <Image
         src="/cytel.png"
         alt="Cytel"
-        height="50px"
-        width="100px"
+        height="50"
+        width="100"
         style={{ borderRadius: "20%" }}
       />
     ),
