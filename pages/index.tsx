@@ -54,8 +54,8 @@ const Home: NextPage = () => {
 
       <div className={styles.aboutContainer}>
         <div className={styles.aboutText}>
-          <p className={styles.aboutp}>Nice to meet you, I&apos;m Adrian!</p>
-          <p className={styles.aboutp}>
+          <p>Nice to meet you, I&apos;m Adrian!</p>
+          <p>
             I&apos;m an undergrad student at the University of Waterloo,
             studying Mechatronics Engineering (with a specialization in
             computing). I am interested in full stack development, information
@@ -64,7 +64,6 @@ const Home: NextPage = () => {
             gained a lot of industry experience as a Software Engineer. I have
             previously interned at{" "}
             <a
-              className={styles.abouta}
               style={{ color: "rgb(210, 238, 242)", fontWeight: 700 }}
               href="https://carta.com/"
               rel="noreferrer"
@@ -74,7 +73,6 @@ const Home: NextPage = () => {
             </a>
             ,{" "}
             <a
-              className={styles.abouta}
               style={{ color: "rgb(81, 178, 63)", fontWeight: 700 }}
               href="https://www.td.com/ca/en/asset-management/"
               rel="noreferrer"
@@ -84,7 +82,6 @@ const Home: NextPage = () => {
             </a>
             ,{" "}
             <a
-              className={styles.abouta}
               style={{ color: "rgb(171, 35, 31)", fontWeight: 700 }}
               href="https://www.piinpoint.com/"
               rel="noreferrer"
@@ -94,7 +91,6 @@ const Home: NextPage = () => {
             </a>
             , and{" "}
             <a
-              className={styles.abouta}
               style={{ color: "rgb(58, 185, 237)", fontWeight: 700 }}
               href="https://www.cytel.com/"
               rel="noreferrer"
@@ -104,19 +100,16 @@ const Home: NextPage = () => {
             </a>
             .
           </p>
-          <p className={styles.aboutp}>
+          <p>
             I&apos;m also a huge fitness enthusiast who loves working out,
             skiing, and playing soccer and volleyball. When I&apos;m not locked
             in my room coding or studying for exams, I also enjoy being outside,
             cooking, watching movies, doing escape rooms, and listening to
             music.
           </p>
-          <p className={styles.aboutp}>
+          <p>
             I&apos;m currently exploring 2024 new grad opportunities.{" "}
-            <a className={styles.abouta} href="mailto:ajendo@uwaterloo.ca">
-              Get in touch
-            </a>
-            .
+            <a href="mailto:ajendo@uwaterloo.ca">Get in touch</a>.
           </p>
         </div>
       </div>

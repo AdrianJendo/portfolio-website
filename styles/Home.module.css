@@ -84,11 +84,6 @@
   align-items: center;
 }
 
-.abouta {
-  text-decoration: none;
-  font-weight: 700;
-}
-
 .profile {
   width: 30vw;
 }
@@ -105,11 +100,6 @@
     margin-right: 2rem;
     font-size: 16px;
     font-weight: 400;
-  }
-
-  .aboutp, .abouta {
-    font-size: 11px;
-    line-height: 15px;
   }
 }
 
