@@ -19,9 +19,24 @@ const Experience: NextPage = () => {
 
   useEffect(() => setExperiences(experiencesData), []);
   return (
-    <div className={styles.container}>
-      <div className={styles.experienceContent}>
-        <h3 className={styles.exph3}>Cool places I&apos;ve worked at</h3>
+    <div className={styles.gridContainer}>
+      {experiences.map((experience) => (
+        <div key={experience.date} className={styles.cardContainer}>
+          <div className="">
+            {experience.logo}
+          </div>
+          <div className="uk-card-body">
+            <h3>{experience.jobTitle}</h3>
+            {experience.description.map((item) => <ul key={item}>{item}</ul>)}
+          </div>
+          <div className={styles.footerContainer}>
+            <p>React</p>
+            <p>React</p>
+            <p>React</p>
+          </div>
+        </div>
+      ))}
+      {/* <div className={styles.experienceContent}>
         <div style={{ marginTop: "35px" }}>
           {experiences.map((experience) => (
             <div
@@ -84,7 +99,7 @@ const Experience: NextPage = () => {
             </div>
           ))}
         </div>
-      </div>
+                    </div> */}
     </div>
   );
 };

@@ -28,15 +28,10 @@ const Home: NextPage = () => {
             options={{
               autoStart: true,
               loop: true,
-              // skipAddStyles:true,
-              // cursorColor: '#C8ABC9',
-              // typeColor: 'white',
               deleteSpeed: 20,
               delay: 100,
               // @ts-ignore
               stringSplitter,
-              // blinkSpeed: 200,
-              // animateCursor: true,
               strings: [
                 "a programmer. 💻",
                 "a mechatronics engineer. 🤖",

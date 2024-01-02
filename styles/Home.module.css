@@ -1,5 +1,5 @@
 .app {
-  padding: 2rem 14vw;
+  padding: 2rem 4vw;
 }
 
 .container {
@@ -45,7 +45,6 @@
 
 .footerContainer {
   margin-top: 5rem;
-
   display: flex;
   flex: 1;
   padding: 2rem 0;
