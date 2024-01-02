@@ -1,12 +1,17 @@
 .gridContainer {
   position: relative;
   padding: 10px;
-  width: 75%;
+}
+
+@media only screen and (min-width: 981px) {
+  .gridContainer {
+    width: 75%;
+  }
 }
 
 .rowContainer {
   display: grid;
-  grid-template-columns: 1fr 8fr;
+  grid-template-columns: minmax(125px, 1fr) 8fr;
   align-items: center;
 }
 
@@ -17,7 +22,7 @@
   padding: 15px;
   box-shadow: 0px 0px 8px;
   margin: 15px;
-  color: rgb(220,220,220)
+  color: rgb(220,220,220);
 }
 
 .cardHeader {
@@ -29,15 +34,14 @@
   margin: 0;
 }
 
-.expImg {
-  /* position: absolute;
-  right: 0; */
-  justify-content: end;
-  align-items: end;
-  float: right;
-  /* position: relative;
-  right: 0;
-  width: 100%; */
+@media only screen and (max-width: 981px) {
+  .rowImg {
+    width: 0;
+    display: none;
+  }
+  .rowContainer {
+    grid-template-columns: 1fr;
+  }
 }
 
 .footerContainer {
