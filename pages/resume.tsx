@@ -16,13 +16,13 @@ const Resume: NextPage = () => {
 
   useEffect(() => {
     if (pdfRef && pdfRef.current) {
-      setPdfWidth(pdfRef.current.scrollWidth - 40); // 40px padding
+      setPdfWidth(pdfRef.current.scrollWidth); // 40px padding
     }
   }, [screenWidth]);
 
   return (
     <div className={styles.resumeContainer}>
-      <h2>Resume PDF</h2>
+      <h2 className={styles.resumeHeader}>Resume PDF</h2>
       <a
         className={styles.wrapperLink}
         href="/resume.pdf"
@@ -33,7 +33,7 @@ const Resume: NextPage = () => {
           <h4>Download File (pdf)</h4>
         </div>
       </a>
-      <h2>Preview</h2>
+      <h2 className={styles.resumeHeader}>Preview</h2>
       <div className={styles.resume} ref={pdfRef}>
         <Document file="/resume.pdf">
           {pdfWidth && (
