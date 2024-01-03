@@ -22,7 +22,7 @@ const Experience: NextPage = () => {
   return (
     <div className={styles.gridContainer}>
       {experiences.map((experience) => (
-        <div key={experience.company} className={styles.rowContainer}>
+        <div key={experience.date} className={styles.rowContainer}>
           <div className={styles.rowImg}>{experience.logo}</div>
           <div className={styles.cardContainer}>
             <h3 className={styles.cardHeader}>

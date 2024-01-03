@@ -6,7 +6,8 @@ import Typewriter from "typewriter-effect";
 import GraphemeSplitter from "grapheme-splitter";
 
 // TODO:
-// Organize styling
+// Click on icons to show list of all projects/experience with that technology
+// Connecting lines for experience
 
 const stringSplitter = (s: string): string[] => {
   const splitter = new GraphemeSplitter();
@@ -17,7 +18,6 @@ const Home: NextPage = () => {
   return (
     <div>
       <h1 className={styles.title}> Hello, {"I'm"} Adrian</h1>
-
       <h2 className={styles.subheading}>
         {"I'm "}
         <span style={{ display: "inline-block", height: "50px" }}>
