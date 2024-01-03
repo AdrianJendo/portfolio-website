@@ -38,19 +38,15 @@ const Experience: NextPage = () => {
               </a>
             </h3>
             <ul className={styles.cardBody}>
-              {experience.description.map((point) => (
-                <li key={point}>
-                  <p>{point}</p>
+              {experience.description.map((item) => (
+                <li key={item} className={styles.cardLi}>
+                  <p>{item}</p>
                 </li>
               ))}
             </ul>
             <div className={styles.footerContainer}>
               {experience.technologies.map((tech) => (
-                <div
-                  key={tech}
-                  data-tooltip={tech}
-                  className={styles.techTooltip}
-                >
+                <div key={tech} className={styles.techTooltip}>
                   <Image
                     src={`/${tech}.svg`}
                     alt={tech}

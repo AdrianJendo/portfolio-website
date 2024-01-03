@@ -11,7 +11,7 @@ const experiences = [
       "Created Amplitude dashboards based on React frontend events for in-depth user behavior analysis, facilitating the identification of critical user drop-off points, resulting in data-driven optimizations and increased user engagement",
     ],
     technologies:
-      ["Python", "Django", "React", "gRPC", "Jenkins", "Kubernetes", "Sentry", "GraphQL"],
+      ["Python", "Django", "React", "gRPC", "Jenkins", "Kubernetes", "Sentry", "GraphQL", "Jira"],
     date: "Summer 2023",
     location: "Kitchener, Ontario",
     url: "https://www.carta.com/",
@@ -34,7 +34,7 @@ const experiences = [
       "Spearheaded tech-debt sprint by replacing inefficient React components and reducing Sentry noise by 130 daily alerts",
     ],
     technologies:
-    ["Python", "Django", "React", "gRPC", "Jenkins", "Kubernetes", "Sentry", "GraphQL"],
+    ["Python", "Django", "React", "gRPC", "Jenkins", "Kubernetes", "Sentry", "GraphQL", "Jira"],
     date: "Fall 2022",
     location: "Kitchener, Ontario",
     url: "https://www.carta.com/",
@@ -58,7 +58,7 @@ const experiences = [
       "Enhanced trading platform usability by creating a React feature to submit trades for multiple portfolios simultaneously",
       "Discovered and resolved error in annualized volatility calculation for portfolio performance report using Python Pandas",
     ],
-    technologies: ["React", "Python", "Microsoft SQL Server", "REST"],
+    technologies: ["React", "Python", "Microsoft SQL Server", "REST", "Jira"],
     date: "Winter 2022",
     location: "Toronto, Ontario",
     url: "https://www.td.com/ca/en/asset-management/",
