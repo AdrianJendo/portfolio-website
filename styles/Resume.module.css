@@ -1,0 +1,42 @@
+.resumeContainer {
+	width: 80%;
+	margin-bottom: 20px;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+}
+
+.wrapperLink {
+	display: block;
+	width: 200px;
+	margin: auto;
+}
+
+.wrapperLink:hover::after,
+.wrapperLink:focus::after {
+	text-decoration: none;
+	opacity: 0;
+}
+
+.downloadCard {
+	background: #262626;
+  border-radius: 25px;
+	border: 1px solid #262626;
+  padding: 15px;
+  margin: auto;
+  color: rgb(220,220,220);
+	height: 150px;
+	transition: 0.3s;
+}
+
+.downloadCard:hover {
+	border: 1px solid rgba(150,231,98,0.3);
+	cursor: pointer;
+}
+
+.resume {
+	display: flex;
+  justify-content: center;
+	border: 1px solid #fff;
+	padding: 20px;
+}
