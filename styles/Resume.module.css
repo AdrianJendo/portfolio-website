@@ -12,7 +12,7 @@
 
 .wrapperLink {
 	display: block;
-	width: 200px;
+	width: min(100%, 200px);
 	margin: auto;
 }
 

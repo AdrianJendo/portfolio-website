@@ -1,6 +1,7 @@
 .gridContainer {
   position: relative;
   height: 100%;
+  width: 100%;
   display: grid;
   padding: 3.75%; /*10px*/
   grid-template-columns: 100%;
@@ -52,7 +53,7 @@
 .cardHeader {
   text-align: center;
   margin: 0;
-  color: rgb(255,255,255)
+  color: rgb(255,255,255);
 }
 
 .headerLink {
@@ -89,6 +90,7 @@
 .footerContainer {
   margin: 0 auto;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   border-top: 1px solid #eaeaea;
   justify-content: center;

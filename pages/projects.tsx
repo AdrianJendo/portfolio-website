@@ -37,15 +37,12 @@ const Project: NextPage = () => {
               ) : (
                 <span>{project.name}</span>
               )}
+              &nbsp; &nbsp;
               <Link
                 href={project.github}
                 rel="noreferrer"
                 target="_blank"
                 className={styles.githublink}
-                style={{
-                  marginLeft: "10px",
-                  position: "absolute",
-                }}
               >
                 <Image alt="Github" width={20} height={20} src="/github.svg" />
               </Link>

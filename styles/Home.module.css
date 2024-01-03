@@ -37,7 +37,7 @@
     margin-top: 5rem;
   }
   .subheading {
-    font-size: 4vw;
+    font-size: 6vw;
     line-height: 6vw;
     padding-top: 1.5rem;
   }
@@ -106,7 +106,7 @@
 .photo {
   margin: auto;
   position: relative;
-  width: 400px;
+  width: min(100%, 400px);
   height: 400px;
   border-radius: 50%;
   border: 5px solid #e2e8f0;
