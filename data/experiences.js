@@ -11,7 +11,7 @@ const experiences = [
       "Created Amplitude dashboards based on React frontend events for in-depth user behavior analysis, facilitating the identification of critical user drop-off points, resulting in data-driven optimizations and increased user engagement",
     ],
     technologies:
-      "Python, Django, React, Kafka, gRPC, Jenkins, Kubernetes, Sentry, GraphQL",
+      ["Python", "Django", "React", "gRPC", "Jenkins", "Kubernetes", "Sentry", "GraphQL", "Jira"],
     date: "Summer 2023",
     location: "Kitchener, Ontario",
     url: "https://www.carta.com/",
@@ -19,8 +19,8 @@ const experiences = [
       <Image
         src="/carta.png"
         alt="Carta"
-        height="50px"
-        width="100px"
+        height="50"
+        width="100"
         style={{ borderRadius: "20%" }}
       />
     ),
@@ -34,7 +34,7 @@ const experiences = [
       "Spearheaded tech-debt sprint by replacing inefficient React components and reducing Sentry noise by 130 daily alerts",
     ],
     technologies:
-      "Python, Django, gRPC, Datadog, Jenkins, Kubernetes, Sentry, GraphQL",
+    ["Python", "Django", "React", "gRPC", "Jenkins", "Kubernetes", "Sentry", "GraphQL", "Jira"],
     date: "Fall 2022",
     location: "Kitchener, Ontario",
     url: "https://www.carta.com/",
@@ -42,8 +42,8 @@ const experiences = [
       <Image
         src="/carta.png"
         alt="Carta"
-        height="50px"
-        width="100px"
+        height="50"
+        width="100"
         style={{ borderRadius: "20%" }}
       />
     ),
@@ -58,7 +58,7 @@ const experiences = [
       "Enhanced trading platform usability by creating a React feature to submit trades for multiple portfolios simultaneously",
       "Discovered and resolved error in annualized volatility calculation for portfolio performance report using Python Pandas",
     ],
-    technologies: "React, Python, MS SQL Server, REST",
+    technologies: ["React", "Python", "Microsoft SQL Server", "REST", "Jira"],
     date: "Winter 2022",
     location: "Toronto, Ontario",
     url: "https://www.td.com/ca/en/asset-management/",
@@ -66,8 +66,8 @@ const experiences = [
       <Image
         src="/td.png"
         alt="TD"
-        height="75px"
-        width="75px"
+        height="75"
+        width="75"
         style={{ borderRadius: "50%" }}
       />
     ),
@@ -81,7 +81,7 @@ const experiences = [
       "Developed mobile traffic volumes feature with React and Python, receiving client praise for enhanced product value",
       "Wrote backend test cases in Python to unit test APIs and enable quick verification of system functionality in CI/CD pipelines",
     ],
-    technologies: "React, Python, PostgreSQL, MongoDB, Docker, REST",
+    technologies: ["React", "Python", "PostgreSQL", "MongoDB", "Docker", "REST"],
     date: "Summer 2021",
     location: "Kitchener, Ontario",
     url: "https://www.piinpoint.com/",
@@ -89,8 +89,8 @@ const experiences = [
       <Image
         src="/piinpoint.png"
         alt="PiinPoint"
-        height="75px"
-        width="75px"
+        height="75"
+        width="75"
         style={{ borderRadius: "50%" }}
       />
     ),
@@ -102,7 +102,7 @@ const experiences = [
       "Developed web applications with R Shiny to enable researchers to systematically conduct Bayesian network meta-analysis",
       "Web scraped abstracts using Python Selenium to train NLP model for parsing publications based on sentiment analysis",
     ],
-    technologies: "Python, R",
+    technologies: ["Python", "R"],
     date: "Fall 2020",
     location: "Vancouver, British Columbia",
     url: "https://www.cytel.com/",
@@ -110,8 +110,8 @@ const experiences = [
       <Image
         src="/cytel.png"
         alt="Cytel"
-        height="50px"
-        width="100px"
+        height="50"
+        width="100"
         style={{ borderRadius: "20%" }}
       />
     ),

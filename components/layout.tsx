@@ -14,7 +14,6 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
       </Head>
 
       <nav>
-        {/* <div className="navbar-logo">Logo</div> */}
         <div className="navbar-logos">
           <a
             href="https://www.linkedin.com/in/adrian-jendo/"
@@ -53,23 +52,23 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
             </Link>
           </li> */}
           <li>
-            <Link href="/">
-              <a className="nav-link">home</a>
+            <Link className="nav-link" href="/">
+              home
             </Link>
           </li>
           <li>
-            <Link href="/experience">
-              <a className="nav-link">experience</a>
+            <Link className="nav-link" href="/experience">
+              experience
             </Link>
           </li>
           <li>
-            <Link href="/projects">
-              <a className="nav-link">projects</a>
+            <Link className="nav-link" href="/projects">
+              projects
             </Link>
           </li>
           <li>
-            <Link href="mailto:ajendo@uwaterloo.ca">
-              <a className="nav-link">contact</a>
+            <Link className="nav-link" href="/resume">
+              resume
             </Link>
           </li>
         </ul>

@@ -4,8 +4,8 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  background: rgb(33, 30, 63);
-  color: white;
+  background: rgb(34, 34, 34);
+  color: rgb(255,255,255);
 }
 
 html {
@@ -14,11 +14,6 @@ html {
 
 a {
   color: inherit;
-  text-decoration: none;
-}
-
-a {
-  font-size: 16px;
   font-weight: 500;
   text-decoration: none;
   position: relative;
@@ -31,7 +26,7 @@ a::after {
   left: 0;
   width: 100%;
   height: 0.2em;
-  background-color: #c8abc9;
+  background-color: white;
   opacity: 0;
   transition: opacity 300ms, transform 300ms;
 }
@@ -73,35 +68,15 @@ li {
   padding: 0 1rem;
 }
 
-ul {
-  list-style-type: none;
-}
-
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.navbar-logo a::after {
-  background-color: rgba(0, 0, 255, 0);
-}
-
-.navbar-logo img:hover {
-  /* margin: 30px; */
-  border-radius: 50%;
-  box-shadow: 0 0 5px #ff02c0;
-  animation: glow 2s linear infinite alternate;
-}
-
-@keyframes glow {
-  to {
-    box-shadow: 0px 0px 10px 10px #5adddd;
-  }
-}
-
 .navbar-links {
   display: flex;
+  list-style-type: none;
 }
 
 .navbar-logos {
