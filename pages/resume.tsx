@@ -1,14 +1,16 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
-import { NextPage } from "next/types";
 import styles from "../styles/Resume.module.css";
 import Image from "next/image";
 import { pdfjs } from "react-pdf";
 import { Document, Page } from "react-pdf";
 import useWindowDimensions from "../hooks/useWindowDimensions";
 import dynamic from "next/dynamic";
+import Props from "../types/TransitionProps";
+import { motion } from "framer-motion";
+import { sliderVariants } from "../helpers/animations";
 
-const Resume: NextPage = () => {
+const Resume = ({ nextPage, prevPage }: Props) => {
   pdfjs.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.js`;
   const { width: screenWidth } = useWindowDimensions();
   const pdfRef = useRef<HTMLDivElement>(null);
@@ -21,7 +23,17 @@ const Resume: NextPage = () => {
   }, [screenWidth]);
 
   return (
-    <div className={styles.resumeContainer}>
+    <motion.div
+      custom={{ nextPage, prevPage }}
+      variants={sliderVariants}
+      initial="enter"
+      animate="center"
+      exit="exit"
+      transition={{
+        duration: 0.15,
+      }}
+      className={styles.resumeContainer}
+    >
       <h2 className={styles.resumeHeader}>Resume PDF</h2>
       <a
         className={styles.wrapperLink}
@@ -46,7 +58,7 @@ const Resume: NextPage = () => {
           )}
         </Document>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

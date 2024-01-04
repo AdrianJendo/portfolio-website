@@ -4,7 +4,13 @@ import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
 
-const Layout = ({ children }: { children: React.ReactNode }) => {
+interface Props {
+  children: React.ReactNode;
+  setNextPage: React.Dispatch<React.SetStateAction<number>>;
+  setPrevPage: () => void;
+}
+
+const Layout = ({ children, setNextPage, setPrevPage }: Props) => {
   return (
     <div className={styles.app}>
       <Head>
@@ -46,28 +52,63 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
           </a>
         </div>
         <ul className="navbar-links">
-          {/* <li>
-            <Link href="/about">
-              <a className="nav-link">about</a>
-            </Link>
-          </li> */}
           <li>
-            <Link className="nav-link" href="/">
+            <Link
+              className="nav-link"
+              href="/"
+              onMouseDown={() => {
+                setNextPage(0);
+              }}
+              onClick={() => {
+                setPrevPage();
+              }}
+              scroll={false}
+            >
               home
             </Link>
           </li>
           <li>
-            <Link className="nav-link" href="/experience">
+            <Link
+              className="nav-link"
+              href="/experience"
+              onMouseDown={() => {
+                setNextPage(1);
+              }}
+              onClick={() => {
+                setPrevPage();
+              }}
+              scroll={false}
+            >
               experience
             </Link>
           </li>
           <li>
-            <Link className="nav-link" href="/projects">
+            <Link
+              className="nav-link"
+              href="/projects"
+              onMouseDown={() => {
+                setNextPage(2);
+              }}
+              onClick={() => {
+                setPrevPage();
+              }}
+              scroll={false}
+            >
               projects
             </Link>
           </li>
           <li>
-            <Link className="nav-link" href="/resume">
+            <Link
+              className="nav-link"
+              href="/resume"
+              onMouseDown={() => {
+                setNextPage(3);
+              }}
+              onClick={() => {
+                setPrevPage();
+              }}
+              scroll={false}
+            >
               resume
             </Link>
           </li>

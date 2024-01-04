@@ -1,22 +1,32 @@
-import React, { useEffect, useState } from "react";
-import type { NextPage } from "next";
+import React from "react";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import Typewriter from "typewriter-effect";
 import GraphemeSplitter from "grapheme-splitter";
+import { motion } from "framer-motion";
+import { sliderVariants } from "../helpers/animations";
+import Props from "../types/TransitionProps";
 
 // TODO:
 // Click on icons to show list of all projects/experience with that technology
-// Connecting lines for experience
 
 const stringSplitter = (s: string): string[] => {
   const splitter = new GraphemeSplitter();
   return splitter.splitGraphemes(s);
 };
 
-const Home: NextPage = () => {
+const Home = ({ nextPage, prevPage }: Props) => {
   return (
-    <div>
+    <motion.div
+      custom={{ nextPage, prevPage }} // this page is "nextPage" when it is rendered, and "prevPage" when the next page is being rendered
+      variants={sliderVariants}
+      initial="enter"
+      animate="center"
+      exit="exit"
+      transition={{
+        duration: 0.15,
+      }}
+    >
       <h1 className={styles.title}> Hello, {"I'm"} Adrian</h1>
       <h2 className={styles.subheading}>
         {"I'm "}
@@ -113,7 +123,7 @@ const Home: NextPage = () => {
           </p>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
