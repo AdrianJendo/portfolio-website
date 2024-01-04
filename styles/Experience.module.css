@@ -50,12 +50,36 @@
   padding-left: 0;
 }
 
-.rowImg {
+.imgContainer {
+  position: relative;
+  display: table;
+  height: 100%;
   justify-self: center;
 }
 
+.logo {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.topLine {
+  position: absolute;
+  border-left: 2px solid #fff;
+  top: 0;
+  bottom: 70%;
+  left: 50%;
+}
+
+.bottomLine {
+  position: absolute;
+  border-left: 2px solid #fff;
+  top: 70%;
+  bottom: 0;
+  left: 50%;
+}
+
 @media only screen and (max-width: 981px) {
-  .rowImg {
+  .imgContainer {
     width: 0;
     display: none;
   }
