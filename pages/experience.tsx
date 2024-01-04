@@ -33,11 +33,17 @@ const Experience = ({ nextPage, prevPage }: Props) => {
         duration: 0.15,
       }}
     >
-      {experiences.map((experience) => (
+      {experiences.map((experience, idx) => (
         <div key={experience.date} className={styles.rowContainer}>
           <div className={styles.imgContainer}>
-            <div className={styles.topLine} />
-            <div className={styles.bottomLine} />
+            <div className={idx == 0 ? styles.firstLine : styles.topLine} />
+            <div
+              className={
+                idx == experiences.length - 1
+                  ? styles.lastLine
+                  : styles.bottomLine
+              }
+            />
             <div className={styles.logo}>{experience.logo}</div>
           </div>
           <div className={styles.cardContainer}>
