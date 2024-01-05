@@ -1,10 +1,12 @@
-import type { NextPage } from "next";
 import { ReactElement, useEffect, useState } from "react";
 import experiencesData from "../data/experiences";
 import styles from "../styles/Experience.module.css";
 import Image from "next/image";
+import { motion } from "framer-motion";
+import { sliderVariants } from "../helpers/animations";
+import Props from "../types/TransitionProps";
 
-const Experience: NextPage = () => {
+const Experience = ({ nextPage, prevPage }: Props) => {
   const [experiences, setExperiences] = useState<
     {
       jobTitle: string;
@@ -20,10 +22,30 @@ const Experience: NextPage = () => {
 
   useEffect(() => setExperiences(experiencesData), []);
   return (
-    <div className={styles.gridContainer}>
-      {experiences.map((experience) => (
+    <motion.div
+      className={styles.gridContainer}
+      custom={{ nextPage, prevPage }}
+      variants={sliderVariants}
+      initial="enter"
+      animate="center"
+      exit="exit"
+      transition={{
+        duration: 0.15,
+      }}
+    >
+      {experiences.map((experience, idx) => (
         <div key={experience.date} className={styles.rowContainer}>
-          <div className={styles.rowImg}>{experience.logo}</div>
+          <div className={styles.imgContainer}>
+            <div className={idx == 0 ? styles.firstLine : styles.topLine} />
+            <div
+              className={
+                idx == experiences.length - 1
+                  ? styles.lastLine
+                  : styles.bottomLine
+              }
+            />
+            <div className={styles.logo}>{experience.logo}</div>
+          </div>
           <div className={styles.cardContainer}>
             <h3 className={styles.cardHeader}>
               {experience.jobTitle}
@@ -61,7 +83,7 @@ const Experience: NextPage = () => {
           </div>
         </div>
       ))}
-    </div>
+    </motion.div>
   );
 };
 

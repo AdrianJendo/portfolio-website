@@ -1,11 +1,13 @@
-import type { NextPage } from "next";
 import { useEffect, useState } from "react";
 import projectsData from "../data/projects";
 import styles from "../styles/Projects.module.css";
 import Image from "next/image";
 import Link from "next/link";
+import { motion } from "framer-motion";
+import { sliderVariants } from "../helpers/animations";
+import Props from "../types/TransitionProps";
 
-const Project: NextPage = () => {
+const Project = ({ nextPage, prevPage }: Props) => {
   const [projects, setProjects] = useState<
     {
       name: string;
@@ -20,7 +22,17 @@ const Project: NextPage = () => {
 
   useEffect(() => setProjects(projectsData), []);
   return (
-    <div className={styles.gridContainer}>
+    <motion.div
+      className={styles.gridContainer}
+      custom={{ nextPage, prevPage }}
+      variants={sliderVariants}
+      initial="enter"
+      animate="center"
+      exit="exit"
+      transition={{
+        duration: 0.15,
+      }}
+    >
       {projects.map((project) => (
         <div key={project.name} className={styles.cardContainer}>
           <div>
@@ -91,86 +103,7 @@ const Project: NextPage = () => {
           </div>
         </div>
       ))}
-    </div>
-    //           {projects.map((project) => (
-    //             <div key={project.github} style={{ marginTop: "25px" }}>
-    //               <div
-    //                 style={{
-    //                   backgroundColor: "rgb(31, 30, 36)",
-    //                   borderRadius: "25px",
-    //                   padding: "5px",
-    //                   boxShadow: "0px 0px 10px",
-    //                 }}
-    //               >
-    //                 {" "}
-    //                 {/* style={{ paddingLeft: "5rem"}}*/}
-    //                 <div
-    //                   style={{
-    //                     display: "flex",
-    //                     justifyContent: "space-between",
-    //                   }}
-    //                 >
-    //                   <h4
-    //                     className={styles.exph4}
-    //                     style={{ marginTop: "15px" }}
-    //                   >
-    //                     {project.website ? (
-    //                       <a
-    //                         href={project.website}
-    //                         rel="noreferrer"
-    //                         target="_blank"
-    //                         className={styles.expa}
-    //                       >
-    //                         {project.name}
-    //                       </a>
-    //                     ) : (
-    //                       <span>{project.name}</span>
-    //                     )}
-    //                     <a
-    //                       href={project.github}
-    //                       rel="noreferrer"
-    //                       target="_blank"
-    //                       className={styles.githublink}
-    //                       style={{
-    //                         marginLeft: "10px",
-    //                         position: "absolute",
-    //                       }}
-    //                     >
-    //                       <Image
-    //                         alt="Github"
-    //                         width={20}
-    //                         height={20}
-    //                         src="/github.svg"
-    //                       />
-    //                     </a>
-    //                   </h4>
-    //                 </div>
-    //                 <p className={styles.expdescription}>
-    //                   {project.description}
-    //                 </p>
-    //                 <ul className={styles.expul}>
-    //                   {project.about.map((point) => (
-    //                     <li key={point} className={styles.expli}>
-    //                       <p className={styles.expp}>{point}</p>
-    //                     </li>
-    //                   ))}
-    //                 </ul>
-    //                 <p
-    //                   className={styles.expdescription}
-    //                   style={{ paddingBottom: "10px" }}
-    //                 >
-    //                   <span style={{ fontWeight: 700 }}>Technologies</span>:{" "}
-    //                   {project.technologies}
-    //                 </p>
-
-    //               </div>
-    //             </div>
-    //           ))}
-    //         </div>
-    //       </div>
-    //     </div>
-    //   </div>
-    // </div>
+    </motion.div>
   );
 };
 
